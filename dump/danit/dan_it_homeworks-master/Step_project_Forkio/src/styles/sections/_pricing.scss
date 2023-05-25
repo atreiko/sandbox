@@ -1,0 +1,181 @@
+.pricing {
+    background-color: rgb(75, 59, 78);
+    padding: 1.2rem 0 9.3rem;
+    color: $white-color;
+    &__title {
+        font-size: 2.8rem;
+        line-height: 4.2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 5.1rem;
+    }
+    .pricing-list {
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto 1.4rem auto;
+            max-width: 256px;
+        }
+        &__item:nth-of-type(3) {
+            max-width: 299px;
+        }
+        &__item-category {
+            text-align: center;
+            width: 100%;
+            padding: 4rem 0;
+            font-size: 2.4rem;
+            line-height: 2.6rem;
+            text-transform: uppercase;
+            background-color: rgba(255, 255, 255, 0.06);
+        }
+        &__item-category--show {
+            padding: 4.7rem 0;
+            background-color: rgba(0, 0, 0, 0.11);
+        }
+        &__item-cost {
+            background-color: rgba(255, 255, 255, 0.11);
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__item-cost--show {
+            background-color: rgba(70, 48, 72, 0.83);
+        }
+        &__item-cost-inner {
+            font-size: 6rem;
+            line-height: 6.2rem;
+            padding: 2.95rem 0 2.05rem;
+            font-weight: 700;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        &__item-cost-inner--show {
+            font-size: 8.2rem;
+        }
+        &__item-cost-inner:before {
+            content: '$';
+            font-weight: normal;
+            position: relative;
+            display: block;
+        }
+        &__item-cost-subtitle {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            line-height: 1.6rem;
+        }
+        &__item-cost-subtitle::after {
+            content: '';
+            width: 6rem;
+            height: .5rem;
+            background: $light-purple-color;
+            display: block;
+            margin: 0 auto;
+            margin-top: 3.8rem;
+        }
+        &__item-cost-advantage {
+            text-transform: capitalize;
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+            padding-top: 3rem;
+        }
+        &__item-cost-advantage--visibility {
+            margin-bottom: 6.7rem;
+        }
+        &__item-cost-support {
+            text-transform: capitalize;
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+            padding: .7rem 0 3.8rem 0;
+        }
+        &__item-cost-support--show {
+            padding: .7rem 0 8.3rem 0;
+        }
+        &__item-cost-btn {
+            text-transform: uppercase;
+            width: 16rem;
+            font-size: 1.5rem;
+            line-height: 1.7rem;
+            border: .1rem solid transparent;
+            border-radius: 4rem;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 1.5rem 1.7rem;
+            cursor: pointer;
+            color: $white-color;
+            margin: 0 auto 3.8rem auto;
+        }
+        &__item-cost-btn--show {
+            font-size: 1.6rem;
+            padding: 1.9rem 2.9rem;
+            width: 19rem;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .pricing {
+        padding: 0.4rem 0 6.8rem;
+        background-image: url(../../img/section_pricing/pricing_background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        &__title {
+            font-size: 4.2rem;
+            line-height: 4.4rem;
+            margin-bottom: 3.9rem;
+        }
+        .pricing-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 59.5rem;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            &__item {
+                max-width: 257px;
+                width: 100%;
+                align-content: center;
+                margin-bottom: 4.2rem;
+                align-self: center;
+            }
+            &__item:nth-of-type(3) {
+                max-width: 299px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desctop) {
+    .pricing {
+        padding: 0.8rem 0 9.7rem;
+        background-image: url(../../img/section_pricing/pricing_background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        &__wrap {
+            max-width: 120rem;
+            margin: 0 auto;
+        }
+        &__title {
+            font-size: 4.8rem;
+            line-height: 5rem;
+            margin-bottom: 6rem;
+        }
+        .pricing-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            place-content: center;
+            gap: 1.4rem;
+            max-width: 120rem;
+            &__item {
+                max-width: 257px;
+                width: 100%;
+                place-content: center;
+            }
+            &__item:nth-of-type(3) {
+                max-width: 299px;
+            }
+        }
+    }
+}

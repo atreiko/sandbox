@@ -1,0 +1,195 @@
+@import "./reset.css";
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.wrapper {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    background: url(../img/font.png) no-repeat;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.main-header {
+    padding: 44px 0 35px;
+}
+
+.container-header {
+    max-width: 1064px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    float: left;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    padding-left: 61px;
+    margin-top: 10px;
+}
+
+.header-logo:hover {
+    background-image: url(../img/logo_hover.png);
+    background-repeat: no-repeat;
+}
+
+.header-logo:hover .logo-text {
+    color: #F26522;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
+.logo-text {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: color 0.3s linear;
+}
+
+.milan {
+    font-size: 29px;
+}
+
+.holidays {
+    font-size: 18px;
+}
+
+.contacts {
+    float: right;
+    padding-top: 6px;
+}
+
+.email {
+    display: block;
+    font-size: 18px;
+    transition: color 0.3s linear;
+}
+
+.email:hover {
+    color: #F26522;
+}
+
+.phone {
+    float: right;
+    color: white;
+    font-size: 18px;
+    margin-top: 11px;
+    transition: color 0.3s linear;
+}
+
+.phone:hover {
+    color: #F26522;
+}
+
+.container-main {
+    max-width: 1064px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    display: block;
+    height: 260px;
+    width: 300px;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 82px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.gallery-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.gallery-photo {
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 203px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    background: white;
+    box-shadow: 11px 16px 24px 3px rgba(0, 0, 0, 0.8);
+    border-image: linear-gradient(#e1ebcb, #050606) 5;
+}
+
+.gallery-item-text {
+    text-align: center;
+    margin-top: 18.5px;
+    font-size: 18px;
+}
+
+.gallery-item-info {
+    position: absolute;
+    width: 300px;
+    height: 63px;
+    background-color: #F26522;
+    bottom: -63px;
+    transition: bottom 0.5s linear 0.2s;
+}
+
+.gallery-item:hover .gallery-item-info {
+    bottom: 0px;
+}
+
+.gallery-item:hover .gallery-link {
+    color: #F26522;
+}
+
+.gallery-item-price {
+    float: left;
+}
+
+.price-text {
+    color: white;
+    padding-left: 21px;
+    display: block;
+    line-height: 21px;
+}
+
+.from {
+    font-size: 10px;
+    padding-top: 11px;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.price-view {
+    float: right;
+    margin-top: 33px;
+}
+
+.price-view-text {
+    font-size: 14px;
+}
+
+.price-view-text::after {
+    content: url(../img/vector.png);
+    width: 5px;
+    height: 10px;
+    padding: 0px 20px 0 24px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    vertical-align: middle;
+}
+
+.container-footer {
+    max-width: 1064px;
+    margin: 0 auto;
+}
+
+.footer-main {
+    display: block;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+}

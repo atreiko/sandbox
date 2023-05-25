@@ -1,0 +1,99 @@
+.revolutionary {
+    padding: 7.95rem 1rem 8.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &__title {
+        color: #635C73;
+        text-transform: uppercase;
+        line-height: 2.8rem;
+        font-size: 2.6rem;
+        font-weight: 700;
+        padding-bottom: 3.7rem;
+    }
+    &__subtitle {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: $revolutionary-color;
+        font-family: 'Lato', 'Arial', sans-serif;
+        padding-bottom: 2.6rem;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid rgba(27, 31, 35, .15);
+        border-radius: 6px;
+        border-color: rgba(27, 31, 35, .15);
+        box-shadow: 0 1px 0 rgba(27, 31, 35, .04), inset 0 1px 0 hsla(0, 0%, 100%, .25);
+        cursor: pointer;
+        line-height: 2rem;
+        margin: 2rem 1rem 0 0;
+    }
+    &__icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fafbfc;
+        border-right: 1px solid rgba(27, 31, 35, .15);
+        padding: 0 .5rem;
+        font-size: 1rem;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+        font-weight: 700;
+    }
+    &__img {
+        fill: #6a737d;
+    }
+    &__text {
+        padding: $padding-svg;
+    }
+    &__details {
+        font-size: 1rem;
+        font-weight: 700;
+        padding: $padding-svg;
+        background-color: #ffffff;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .revolutionary {
+        padding: 10.1rem 3.7rem 9.8rem;
+        &__title {
+            font-size: 4.2rem;
+            line-height: 4.4rem;
+            padding-bottom: 3.6rem;
+        }
+        &__subtitle {
+            font-size: 2.1rem;
+            line-height: 3.1rem;
+            padding-bottom: 2.4rem;
+        }
+    }
+}
+
+@media screen and (min-width: $desctop) {
+    .revolutionary {
+        padding: 7.8rem 15.5rem 7rem;
+        max-width: 120rem;
+        margin: 0 auto;
+        &__title {
+            font-size: 5.4rem;
+            line-height: 5.6rem;
+            padding-bottom: 3.67rem;
+        }
+        &__subtitle {
+            padding-bottom: 1.3rem;
+        }
+    }
+}

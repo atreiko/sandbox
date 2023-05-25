@@ -1,0 +1,70 @@
+.wrapper {
+    font-family: 'Arial', sans-serif;
+    background: paleturquoise;
+    padding: 25px;
+}
+
+.form {
+    border: 1px solid blue;
+    display: inline-block;
+    padding: 25px;
+    position: relative;
+}
+
+.form-title {
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.input-text {
+    padding-right: 10px;
+}
+
+.form-input {
+    padding: 5px;
+}
+
+.focused {
+    border: 3px solid rgb(8, 223, 8);
+}
+
+.error {
+    border: 3px solid red;
+}
+
+.form-current-price {
+    color: blue;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    position: absolute;
+    left: 150px;
+    top: 2px;
+}
+
+.remove-button {
+    background: white;
+    margin-left: 5px;
+    color: blue;
+    border: 1px solid blue;
+    font-weight: 700;
+    border-radius: 50%;
+}
+
+.green-text {
+    color: rgb(8, 223, 8);
+    font-weight: 700;
+}
+
+.validation-message {
+    display: block;
+    padding-top: 10px;
+    text-align: right;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,235 @@
+.visit {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    min-height: 70vh;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    box-shadow: inset 0 -3px 10px 0 black;
+    &__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        color: #fff;
+        text-align: center;
+    }
+    .visit-cards {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        border-radius: 1rem;
+        box-shadow: 0 2rem 3rem 0 rgba(36, 23, 228, .1);
+        &__doctor {
+            padding: 1rem 1.6rem;
+            border-radius: 1rem 1rem 0 0;
+            display: flex;
+            flex-direction: column;
+            &--green {
+                background-color: rgba(20%, 85%, 0%, .3);
+            }
+            &--red {
+                background-color: rgba(100%, 0%, 0%, .3);
+            }
+            &--blue {
+                background-color: rgba(10%, 10%, 70%, .3);
+            }
+            &-title {
+                text-align: center;
+                font-size: 2.4rem;
+                line-height: 3.6rem;
+                font-weight: 700;
+            }
+        }
+        &__patient {
+            padding: 1.6rem 1.6rem;
+            background-color: #fff;
+            &-name {
+                @include patient-field;
+                &-name {
+                    @include patient-info;
+                }
+                &-label {
+                    @include patient-label;
+                }
+            }
+            &-age {
+                @include patient-field;
+                &-info {
+                    @include patient-info;
+                }
+                &-label {
+                    @include patient-label;
+                }
+            }
+            &-pressure {
+                @include patient-field;
+                &-info {
+                    @include patient-info;
+                }
+                &-label {
+                    @include patient-label;
+                }
+            }
+            &-diseases {
+                @include patient-field;
+                &-info {
+                    @include patient-info;
+                }
+                &-label {
+                    @include patient-label;
+                }
+            }
+            &-weight-index {
+                @include patient-field;
+                &-info {
+                    @include patient-info;
+                }
+                &-label {
+                    @include patient-label;
+                }
+            }
+            &-title {
+                @include patient-field;
+                &-label {
+                    @include patient-label;
+                }
+                &-subtitle {
+                    @include patient-info;
+                }
+            }
+            &-description {
+                @include patient-field;
+                &-label {
+                    @include patient-label;
+                }
+                &-info {
+                    @include patient-info;
+                }
+            }
+            &-priority {
+                @include patient-field;
+                &-label {
+                    @include patient-label;
+                }
+                &-info {
+                    @include patient-info;
+                }
+            }
+            &-status {
+                @include patient-field;
+                &-label {
+                    @include patient-label;
+                }
+                &-info {
+                    @include patient-info;
+                }
+            }
+            &-visit-date {
+                @include patient-field;
+                &-label {
+                    @include patient-label;
+                }
+                &-info {
+                    @include patient-info;
+                }
+            }
+            &-last-visit {
+                @include patient-field;
+                &-label {
+                    @include patient-label;
+                }
+                &-info {
+                    @include patient-info;
+                }
+            }
+            .hide {
+                display: none;
+            }
+        }
+    }
+    &__more-info {
+        margin-top: 1rem;
+    }
+    &__btn-more {
+        @include visit-optional-btn;
+        padding: 1.3rem 0;
+    }
+    &__btn-more:hover {
+        font-size: 1.6rem;
+        transition: 300ms;
+    }
+    &__btn-more:hover .zmdi-chevron-down {
+        transform: scale(1.5);
+        transition: 300ms;
+    }
+    &__btn-less {
+        @include visit-optional-btn;
+        padding: 0 0 3rem 1.6rem;
+        text-align: start;
+    }
+    &__btn-less:hover .zmdi-chevron-up {
+        transform: scale(1.5);
+        transition: 300ms;
+    }
+    &__btn-less:hover {
+        font-size: 1.6rem;
+        transition: 300ms;
+    }
+    &__options {
+        transition: all .3s linear;
+        &--edit-btn {
+            @include visit-btn-options;
+            right: 7.5rem;
+        }
+        &--edit-btn:hover {
+            @include visit-options-hover;
+        }
+        &--btn-edit {
+            @include visit-btn;
+            right: 4rem;
+        }
+        &--btn-edit:hover {
+            @include visit-options-hover;
+        }
+        &--btn-delete {
+            @include visit-btn;
+            right: 1rem;
+        }
+        &--btn-delete:hover {
+            @include visit-options-hover;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem 3rem;
+    padding: 3rem;
+}
+
+.btn_active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.finished {
+    filter: grayscale(1) contrast(0.5);
+}
+
+.in-progress {
+    filter: blur(2px) grayscale(1) contrast(0.5);
+}

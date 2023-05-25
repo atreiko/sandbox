@@ -1,0 +1,51 @@
+.cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: 0 0 8px 2px #ffddfa;
+    border-radius: .5rem;
+    width: 100%;
+    &__img {
+        box-shadow: 0 0 8px 2px #ffddfa;
+        background-color: #ffddfa;
+    }
+    &__title {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem 1rem 5rem;
+        &-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            padding-bottom: 1rem;
+        }
+        &-article {
+            font-size: 1.5rem;
+            padding-bottom: .5rem;
+            font-weight: 700;
+        }
+        &-url {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2rem;
+        &-price {
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+    }
+}
+
+.fa-star {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    color: #86347a;
+    font-size: 2rem;
+    cursor: pointer;
+}

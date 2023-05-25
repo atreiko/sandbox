@@ -1,0 +1,138 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-window {
+    margin: 100px auto 50px;
+    padding: 30px 20px 40px;
+    width: 400px;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    &__title {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 0 20px;
+    }
+    label {
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        flex-direction: column;
+        color: #313158;
+    }
+    &__doctors {
+        display: grid;
+        width: 100%;
+        margin-bottom: 1rem;
+        margin-top: .5rem;
+        padding: .5rem;
+        font-size: 14px;
+        color: #313158;
+    }
+    form {
+        display: grid;
+        gap: 1.5rem;
+    }
+    form>label>input {
+        padding: .5rem;
+        margin-top: .5rem;
+        font-size: 1.5rem;
+    }
+    form>label>textarea {
+        padding-left: .5rem;
+        margin-top: .5rem;
+        font-size: 1.5rem;
+    }
+    form>label>select {
+        padding: .5rem;
+        margin-top: .5rem;
+        font-size: 1.5rem;
+        color: #313158;
+    }
+    span:first-child {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+        line-height: 20px;
+    }
+    &__btn {
+        color: #fff;
+        width: 100%;
+        background: #567cf6;
+        border: 1px solid #567cf6;
+        padding: 16px;
+        border-radius: 50px;
+        font-size: 16px;
+        cursor: pointer;
+        outline: none;
+        margin-top: 1rem;
+        box-shadow: 0 10px 20px -10px #587ff3;
+    }
+}
+
+.enter-window__form-btn {
+    color: #fff;
+    width: 100%;
+    background: #567cf6;
+    border: 1px solid #567cf6;
+    padding: 16px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1rem;
+    box-shadow: 0 10px 20px -10px #587ff3;
+}
+
+.enter-window__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.enter-window__form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(0, 0, 0, .2);
+    padding: 10px 0 0 5px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    outline: none;
+    color: #313158;
+}
+
+.warning {
+    color: red;
+    position: absolute;
+    font-size: 1rem;
+    right: 15rem;
+    top: 13.5rem;
+}
+
+.modal-title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.scroll-hidden {
+    overflow: hidden;
+}

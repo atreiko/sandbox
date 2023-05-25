@@ -1,0 +1,19 @@
+.button {
+    padding: 25px;
+    font-size: 22px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+    width: 265px;
+    &__controls {
+        padding: 10px 5px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4248f4deaa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/changeTheme.js" defer></script>
+    <title>Change_color_theme</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container flex">
+                <a href="#void" class="header-logo">journey</a>
+                <div class="top-nav">
+                    <nav class="header-nav">
+                        <a href="#void" class="nav-item calendar"></a>
+                        <a href="#void" class="nav-item forum"></a>
+                        <a href="#void" class="nav-item journey"></a>
+                    </nav>
+                    <p class="top-nav-info">Welcome,&nbsp;
+                        <a href="#void" class="top-nav-link">Log In</a>&nbsp;or&nbsp;
+                        <a href="#void" class="top-nav-link">Sign Up</a>
+                    </p>
+                </div>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="form">
+                <section class="form-section-flex form-header">
+                    <span class="form-header-text">Sign Up</span>
+                    <a href="#void" class="form-header-link">Log In</a>
+                </section>
+                <section class="social-btn-section">
+                    <a href="#void" class="social-btn btn-facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span class="facebook">Facebook</span>
+                    </a>
+                    <a href="#void" class="social-btn btn-google">
+                        <i class="fab fa-google-plus-g"></i>
+                        <span class="google">Google</span>
+                    </a>
+                </section>
+                <p class="separator">or</p>
+                <form action="#void">
+                    <input class="form-input" type="text" name="myFirstName" placeholder="First Name">
+                    <input class="form-input" type="text" name="myLastName" placeholder="Last Name">
+                    <input class="form-input" type="email" name="myEmail" placeholder="Email">
+                    <input class="form-input" type="password" name="myPass" placeholder="Choose Password">
+                    <input class="form-input" type="password" name="myPassAdd" placeholder="Confirm Password">
+                    <label class="label-checkbox">
+                        <input type="checkbox" class="checkbox" checked required>
+                        <span class="checkbox-item"></span>
+                        <p class="checkbox-content">
+                            <span>Agree our&nbsp;</span>
+                            <a href="#void" class="checkbox-link">Terms & Conditions</a></p>
+                    </label>
+                    <input class="form-btn" type="submit" value="Create Account">
+                    <button id="change" class="form-btn">Change theme</button>
+                </form>
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>

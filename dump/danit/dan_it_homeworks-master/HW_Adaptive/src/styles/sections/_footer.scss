@@ -1,0 +1,100 @@
+.footer {
+    background-color: black;
+    &__content {
+        padding: 4rem 3.5rem 4.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-title {
+            font-weight: 700;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            text-transform: uppercase;
+            color: $color-white;
+            margin: 0;
+        }
+        &-subtitle {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            color: $footer-color;
+            text-align: center;
+            margin: .8rem 0 2rem;
+            padding: 0 1rem;
+            &--shown {
+                opacity: 0;
+            }
+        }
+        &-contacts {
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: $footer-color;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &-links {
+            display: flex;
+            margin-bottom: 2rem;
+        }
+        &-link {
+            width: 3.4rem;
+            height: 3.4rem;
+            margin: 0 .3rem;
+            display: grid;
+            place-content: center;
+            border: 2px solid #F8902E;
+            border-radius: 50%;
+        }
+        &-link:nth-child(2) {
+            border: 2px solid #39599F;
+        }
+        &-link:nth-child(3) {
+            border: 2px solid #45B0E3;
+        }
+        &-link:nth-child(4) {
+            border: 2px solid #D97AB0;
+        }
+        &-link:nth-child(5) {
+            border: 2px solid #CC212C;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .footer {
+        &__content {
+            padding: 5rem 10rem;
+            &-title {
+                font-size: 1.6rem;
+            }
+            &-subtitle {
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+                margin: 2.2rem 0 3.5rem;
+                &--shown {
+                    opacity: 1;
+                }
+            }
+            &-links {
+                margin-bottom: 3.5rem;
+            }
+            &-contacts {
+                flex-direction: row;
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            }
+            &-contacts span {
+                margin-right: .5rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desctop) {
+    .footer__content {
+        padding-left: 0;
+        padding-right: 0;
+        width: 68rem;
+        margin: 0 auto;
+    }
+}

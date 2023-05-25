@@ -1,0 +1,67 @@
+.modal__wrapper {
+    &-item {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.wrap-modal {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 30px;
+    margin-top: 20px;
+    place-content: center;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-window-first {
+    @include modal-window;
+    box-shadow: 0 0 25px 7px $first-modal-body;
+    &__header-first {
+        @include modal-header;
+        background-color: $first-modal-header;
+    }
+    &__close-btn-first {
+        @include close-btn;
+        background-color: $first-modal-header;
+    }
+    &__body-first {
+        background-color: $first-modal-body;
+        @include modal-body;
+    }
+    &__footer-first {
+        background-color: $first-modal-body;
+        @include modal-footer;
+    }
+}
+
+.modal-window-second {
+    box-shadow: 0 0 25px 7px $second-modal-body;
+    @include modal-window;
+    &__header-second {
+        @include modal-header;
+        background-color: $second-modal-header;
+    }
+    &__close-btn-second {
+        @include close-btn;
+        background-color: $second-modal-header;
+    }
+    &__body-second {
+        background-color: $second-modal-body;
+        @include modal-body;
+    }
+    &__footer-second {
+        background-color: $second-modal-body;
+        @include modal-footer;
+    }
+}

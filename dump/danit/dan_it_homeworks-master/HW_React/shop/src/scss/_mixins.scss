@@ -1,0 +1,41 @@
+@mixin modal-window {
+    margin: 0 auto;
+    width: 51.7rem;
+    color: #ffffff;
+    margin-top: calc(100vh/3);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+@mixin modal-header {
+    padding: 2.6rem 3rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+
+@mixin close-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+
+@mixin modal-body {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 3rem;
+    padding: 3.9rem 4.2rem 3.4rem;
+}
+
+@mixin modal-footer {
+    padding-bottom: 3.2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 10rem);
+    gap: 2rem;
+    place-content: center;
+}

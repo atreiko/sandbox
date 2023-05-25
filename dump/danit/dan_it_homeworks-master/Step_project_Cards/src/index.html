@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon_16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/favicon_192x192.png">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <script type="module" src='js/script.js'></script>
+
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__logo">
+                <img src="img/logo.png">
+            </div>
+            <div class="header__buttons btn-list"></div>
+        </div>
+    </header>
+    <main>
+
+        <!----- Modals ----->
+        <div class="modal" id="create-modal-window"></div>
+
+        <!----- Filter ----->
+        <div class="filter">
+            <input class="filter__search" type="search">
+            <div class="filter__status">
+                <label>Статус визита:</label>
+                <select id="time-select">
+                  <option selected value="Открыт">Открыт</option>
+                  <option value="Завершен">Завершен</option>
+               </select>
+            </div>
+            <div class="filter__time">
+                <label>Срочность:</label>
+                <select>
+                  <option selected value="Обычная">Обычная</option>
+                  <option value="Приоритетная">Приоритетная</option>
+                  <option value="Неотложная">Неотложная</option>
+               </select>
+            </div>
+            <button class="filter__btn">Фильтровать</button>
+            <button class="filter__btn-clr">Очистить</button>
+        </div>
+
+        <!----- Visits ----->
+        <div class="wrapper">
+            <div class="visit container">
+                <h4 class="visit__title">No items have been added.</h4>
+            </div>
+        </div>
+    </main>
+    </div>
+</body>
+
+</html>

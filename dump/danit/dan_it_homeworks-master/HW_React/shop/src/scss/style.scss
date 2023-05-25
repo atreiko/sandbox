@@ -1,0 +1,24 @@
+@import 'variables';
+@import 'mixins';
+@import './sections/button';
+@import './sections/cards';
+@import './sections/modal';
+@import './sections/container';
+:root {
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 130rem;
+    max-height: 100vh;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}

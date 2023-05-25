@@ -1,0 +1,57 @@
+@import "main_vertical.css";
+.content-column {
+    width: 160px;
+}
+
+.horizontal-cell-background:nth-child(even) {
+    background-color: #E3E3E3;
+}
+
+.horizontal-cell-background:nth-child(odd) {
+    background-color: #F2F2F2;
+}
+
+.horizontal-cell-background,
+td {
+    box-shadow: 0px 5px 6px -5px rgba(0, 0, 0, 0.27) inset;
+}
+
+.smallest-letter {
+    font-size: 14px;
+}
+
+.normal-letter {
+    font-size: 20px;
+}
+
+.bold-letter {
+    font-weight: 700;
+    color: #484848;
+    line-height: 28px;
+    display: block;
+}
+
+.horizontal-cell {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.thead-horizontal-table {
+    border-bottom: 10px solid #3A4965;
+}
+
+.horizontal-cell-price {
+    font-size: 36px;
+    padding: 10px 22px;
+    display: block;
+    padding-top: 15px;
+}
+
+.horizontal-cell-price:after {
+    content: "per month";
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    bottom: 6px;
+}

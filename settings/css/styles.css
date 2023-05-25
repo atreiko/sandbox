@@ -1,0 +1,51 @@
+.checkbox {
+    -webkit-appearance: none; 
+}
+
+/*  *
+    *  CHECKBOX
+    * -webkit-appearance: none; - сброс стилей браузера
+    * 
+*/
+.checkbox {
+    -webkit-appearance: none; 
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    background: #fff;
+    border: 1px solid #383838;
+}
+.checkbox:checked {
+    background: #383838;
+}
+.checkbox::after {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url('./img/check.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+}
+.checkbox:checked::after {
+    display: block;
+}
+
+/*  *
+    *  <input type="number">
+    * -webkit-appearance: none; - сброс стилей браузера
+    * -webkit-outer-spin-button,
+    * input::-webkit-inner-spin-button  - сброс стрелочек 
+    * 
+*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

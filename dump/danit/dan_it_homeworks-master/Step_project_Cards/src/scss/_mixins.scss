@@ -1,0 +1,79 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"),
+        url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+
+@mixin patient-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+@mixin patient-label {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    opacity: .8;
+}
+
+@mixin patient-info {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
+@mixin visit-optional-btn {
+    outline: none;
+    background-color: #ffffff;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 700;
+    border: none;
+    color: #313158;
+}
+
+@mixin visit-btn-options {
+    position: absolute;
+    bottom: 1rem;
+    outline: none;
+    padding: .2rem .5rem;
+    background-color: #ffffff;
+    margin-top: 2rem;
+    color: black;
+    border: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s linear;
+}
+
+@mixin visit-options-hover {
+    color: coral;
+    transform: scale(1.2);
+}
+
+@mixin visit-btn {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 2rem;
+    opacity: .8;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+@mixin filter-btn {
+    background: $btn-color;
+    border: .1rem solid $btn-color;
+    color: #fff;
+    padding: .8rem 2rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 1rem 2rem -1rem #587ff3;
+}

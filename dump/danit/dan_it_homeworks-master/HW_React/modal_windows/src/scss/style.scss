@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'mixins';
+@import './sections/modal';
+@import './sections/button';
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;
+}
