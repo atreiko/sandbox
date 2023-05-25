@@ -1,0 +1,110 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+.page-body {
+	margin: 80px;
+	font-size: 24px;
+}
+.item {
+	width: 300px;
+	height: 200px;
+	border: 1px solid #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-left: 100px;
+	margin-inline-start: 150px;
+}
+.list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	display: flex;
+	/* flex-direction: column; */
+	height: 500px;
+	flex-wrap: wrap;
+
+	align-content: space-around;
+	border: 1px solid #000;
+}
+.list__element {
+	width: 400px;
+	/* flex-basis: 100px; */
+	height: 200px;
+	background-color: #b0c4de;
+	border: 1px solid #00008b;
+	/* flex-grow: 1; */
+	/* margin-left: 100px;
+	margin-inline-start: 150px; */
+}
+/* 5 elements -> 1part = 5parts*/
+.last-child {
+	align-self: flex-end;
+	/* flex: 1 1 300px; */
+	/* flex-grow: 2; */
+	/* flex-shrink: 1; */
+	height: 150px;
+}
+/* last element -> 2part = 2parts*/
+.list1 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	display: flex;
+	flex-direction: column;
+	border: 10px solid blue;
+	flex-wrap: wrap;
+	max-height: 350px;
+	align-content: flex-start;
+}
+.list__item {
+	border: 10px solid red;
+	width: 100px;
+	height: 100px;
+}
+.first__item {
+	width: 200px;
+	height: 200px;
+}
+.third__item {
+	height: 250px;
+}
+.table {
+	background-color: #6495ed;
+	border: 1px solid #000;
+	border-collapse: separate;
+	width: 100%;
+}
+.table-header,
+.table-cell {
+	border: 1px solid #000;
+}
+table {
+	border-collapse: collapse;
+	border: 2px solid rgb(100, 100, 100);
+	letter-spacing: 1px;
+	font-family: sans-serif;
+	font-size: 0.7rem;
+}
+
+td,
+th {
+	border: 1px solid rgb(100, 100, 100);
+	padding: 10px 10px;
+}
+
+td {
+	text-align: center;
+}
+.batman {
+	background-color: #d7d9f2;
+}
+
+.flash {
+	background-color: #ffe8d4;
+}

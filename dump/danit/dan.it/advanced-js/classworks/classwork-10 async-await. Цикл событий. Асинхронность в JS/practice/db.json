@@ -1,0 +1,227 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "author": "Скотт Бэккер",
+      "name": "Тьма, что приходит прежде",
+      "price": 70
+    },
+    {
+      "id": 2,
+      "author": "Скотт Бэккер",
+      "name": "Воин-пророк"
+    },
+    {
+      "id": 3,
+      "name": "Тысячекратная мысль",
+      "price": 70
+    },
+    {
+      "id": 4,
+      "author": "Скотт Бэккер",
+      "name": "Нечестивый Консульт",
+      "price": 70
+    },
+    {
+      "id": 5,
+      "author": "Дарья Донцова",
+      "name": "Детектив на диете",
+      "price": 40
+    },
+    {
+      "id": 6,
+      "author": "Дарья Донцова",
+      "name": "Дед Снегур и Морозочка"
+    },
+    {
+      "author": "fff",
+      "name": "fff",
+      "price": "вава",
+      "id": 7
+    },
+    {
+      "author": "fff",
+      "name": "dffd",
+      "price": "вава",
+      "id": 8
+    },
+    {
+      "author": "fff",
+      "name": "dffd",
+      "price": "вава",
+      "id": 9
+    },
+    {
+      "author": "fff",
+      "name": "dffd",
+      "price": "вава",
+      "id": 10
+    },
+    {
+      "author": "111",
+      "name": "dffd",
+      "price": "вава",
+      "id": 11
+    },
+    {
+      "author": "111",
+      "name": "dffd",
+      "price": "вава",
+      "id": 12
+    },
+    {
+      "author": "111",
+      "name": "dffd",
+      "price": "вава",
+      "id": 13
+    },
+    {
+      "author": "111",
+      "name": "dffd",
+      "price": "вава",
+      "id": 14
+    },
+    {
+      "author": "",
+      "name": "",
+      "price": "",
+      "id": 15
+    },
+    {
+      "author": "kk",
+      "name": "jj",
+      "price": "hhh",
+      "id": 16
+    },
+    {
+      "author": "kk",
+      "name": "jj",
+      "price": "hhh",
+      "id": 17
+    },
+    {
+      "author": "kk",
+      "name": "jj",
+      "price": "hhh",
+      "id": 18
+    },
+    {
+      "author": "kk",
+      "name": "jj",
+      "price": "hhh",
+      "id": 19
+    },
+    {
+      "author": "kk",
+      "name": "jj",
+      "price": "hhh",
+      "id": 20
+    },
+    {
+      "author": "kk",
+      "name": "jj",
+      "price": "hhh",
+      "id": 21
+    },
+    {
+      "author": "kk",
+      "name": "jj",
+      "price": "hhh",
+      "id": 22
+    },
+    {
+      "author": "kk",
+      "name": "jj",
+      "price": "hhh",
+      "id": 23
+    },
+    {
+      "author": "Uasya333",
+      "name": "MY POST",
+      "price": "hhh",
+      "id": 24
+    },
+    {
+      "author": "Uasya333",
+      "name": "MY POST",
+      "price": "hhh",
+      "id": 25
+    },
+    {
+      "author": "Uasya333",
+      "name": "MY POST",
+      "price": "hhh",
+      "id": 26
+    },
+    {
+      "author": "Uasya333",
+      "name": "MY POST",
+      "price": "hhh",
+      "id": 27
+    },
+    {
+      "author": "Uasya333",
+      "name": "MY POST",
+      "price": "hhh",
+      "id": 28
+    },
+    {
+      "author": "Uasya333",
+      "name": "MY POST",
+      "price": "hhh",
+      "id": 29
+    },
+    {
+      "author": "Uasya333",
+      "name": "MY POST",
+      "price": "hhh",
+      "id": 30
+    },
+    {
+      "author": "Uasya333",
+      "name": "MY POST",
+      "price": "hhh",
+      "id": 31
+    },
+    {
+      "author": "Uasya333",
+      "name": "MY POST",
+      "price": "hhh",
+      "id": 32
+    },
+    {
+      "author": "Uasya333",
+      "name": "MY POST",
+      "price": "hhh",
+      "id": 33
+    },
+    {
+      "author": "Uasya333",
+      "name": "MY POST",
+      "price": "hhh",
+      "id": 34
+    },
+    {
+      "author": "Uasya333",
+      "name": "MY POST",
+      "price": "hhh",
+      "id": 35
+    },
+    {
+      "author": "Uasya333",
+      "name": "MY POST",
+      "price": "hhh",
+      "id": 36
+    },
+    {
+      "author": "Uasya333",
+      "name": "MY POST",
+      "price": "hhh",
+      "id": 37
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

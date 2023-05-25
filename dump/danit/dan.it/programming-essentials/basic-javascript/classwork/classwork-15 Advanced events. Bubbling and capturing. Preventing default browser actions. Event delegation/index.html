@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			Advanced events. Bubbling and capturing. Preventing default browser
+			actions. Event delegation
+		</title>
+		<style>
+			.close-btn {
+				background-color: transparent;
+				border: none;
+				cursor: pointer;
+				position: absolute;
+				right: 20px;
+				top: 0;
+                width: 30px;
+                height: 30px;
+			}
+			.pane {
+				padding-left: 30px;
+                height: 50px;
+				position: relative;
+                border: 3px solid #000;
+                background-color: wheat;
+			}
+            [data-disabled="true"]{
+                background-color: whitesmoke;
+                user-select: none;
+                cursor: crosshair;
+            }
+		</style>
+	</head>
+	<body>
+        <ul id="messages">
+            <li class="pane">
+                <!-- <h3>Лошадь</h3>
+                <p>Домашняя лошадь — животное семейства непарнокопытных, одомашненный и единственный сохранившийся подвид дикой лошади, вымершей в дикой природе, за исключением небольшой популяции лошади Пржевальского.</p> -->
+                <button type="button" aria-label="close" class="close-btn">
+                <svg>
+                    <use href="#close">
+                </svg>
+                </button>
+            </li>
+            <li class="pane">
+                <h3>Осёл</h3>
+                <p>Домашний осёл или ишак — одомашненный подвид дикого осла, сыгравший важную историческую роль в развитии хозяйства и культуры человека. Все одомашненные ослы относятся к африканским ослам.</p>
+                <button type="button" aria-label="close" class="close-btn">
+                <svg>
+                    <use href="#close">
+                </svg>
+                </button>
+            </li>
+            <li class="pane">
+                <h3>Корова, а также пара слов о диком быке, о волах и о тёлках. </h3>
+                <p>Коро́ва — самка домашнего быка, одомашненного подвида дикого быка, парнокопытного жвачного животного семейства полорогих. Самцы вида называются быками, молодняк — телятами, кастрированные самцы — волами. Молодых (до первой стельности) самок называют тёлками.</p>
+                <button type="button" aria-label="close" class="close-btn">
+                <svg>
+                    <use href="#close">
+                </svg>
+                </button>
+            </li>
+        </ul>
+        <div  style="display: none;">
+            <svg viewBox="0 0 32 32" id="close" width="32px" height="32px">
+                <title>close</title>
+                <path
+                    clip-rule="evenodd"
+                    d="M16,0C7.163,0,0,7.163,0,16c0,8.836,7.163,16,16,16   c8.836,0,16-7.163,16-16C32,7.163,24.836,0,16,0z M16,30C8.268,30,2,23.732,2,16C2,8.268,8.268,2,16,2s14,6.268,14,14   C30,23.732,23.732,30,16,30z"
+                    fill="#121313"
+                    fill-rule="evenodd"
+                />
+                <path
+                    clip-rule="evenodd"
+                    d="M22.729,21.271l-5.268-5.269l5.238-5.195   c0.395-0.391,0.395-1.024,0-1.414c-0.394-0.39-1.034-0.39-1.428,0l-5.231,5.188l-5.309-5.31c-0.394-0.396-1.034-0.396-1.428,0   c-0.394,0.395-0.394,1.037,0,1.432l5.301,5.302l-5.331,5.287c-0.394,0.391-0.394,1.024,0,1.414c0.394,0.391,1.034,0.391,1.429,0   l5.324-5.28l5.276,5.276c0.394,0.396,1.034,0.396,1.428,0C23.123,22.308,23.123,21.667,22.729,21.271z"
+                    fill="#121313"
+                    fill-rule="evenodd"
+                />
+            </svg></div>
+		<!-- <div id="wrappers">
+			<a href="http://google.com" class="link">To Google</a>
+			<a href="http://google.com" class="link">To Google</a>
+			<a href="http://google.com" class="link">To Google</a>
+			<a href="http://google.com" class="link">To Google</a>
+			<a href="http://google.com" class="link">To Google</a>
+			<a href="http://google.com" class="link">To Google</a>
+			<a href="http://google.com" class="link">To Google</a>
+			<a href="http://google.com" class="link">To Google</a>
+			<a href="http://google.com" class="link">To Google</a>
+			<a href="http://google.com" class="link">To Google</a>
+			<a href="http://google.com" class="link">To Google</a>
+			<a href="http://google.com" class="link">To Google</a>
+			<a href="http://google.com" class="link">To Google</a>
+        </div> -->
+		<!-- <ul id="menu">
+			<li>
+				<a href="#/php">PHP</a>
+				<ul>
+					<li><a href="#/php/manual">Справочник</a></li>
+					<li><a href="#/php/snippets">Сниппеты</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#/html">HTML</a>
+				<ul>
+					<li><a href="#/html/information">Информация</a></li>
+					<li><a href="#/html/examples">Примеры</a></li>
+				</ul>
+			</li>
+		</ul> -->
+		<script src="./js/app.js"></script>
+	</body>
+</html>

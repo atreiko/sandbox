@@ -1,0 +1,50 @@
+.header {
+	padding: 10px 20px;
+	text-align: center;
+
+	&--yellow {
+		background-color: yellow;
+	}
+
+	&::after {
+		content: "";
+		display: block;
+		border-bottom: 2px groove #000;
+	}
+
+	// &__logo {
+	// 	font-size: 24px;
+	// 	text-decoration: none;
+	// 	color: $logoColor;
+	// 	font-weight: 700;
+	// }
+}
+.header__logo {
+	font-size: 1rem * 1.25;
+	font-weight: calc(100 * 7);
+	text-decoration: none;
+	color: $logoColor;
+
+	@include transform(translateY(50%));
+}
+.header__menu {
+	@extend %list-reset;
+}
+.header2__menu {
+	@extend %list-reset;
+}
+.header3__menu {
+	@extend %list-reset;
+}
+
+.menu__link {
+	text-decoration: none;
+}
+@for $i from 1 through 4 {
+	.menu__item:nth-child(#{$i}) {
+		.menu__link {
+			color: rgb(50 * $i, 50 * $i, 50 * $i);
+			font-size: 1rem * $i;
+		}
+	}
+}

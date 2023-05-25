@@ -1,0 +1,94 @@
+html {
+	scroll-behavior: smooth;
+}
+.page-body {
+	padding: 30px 100px;
+}
+.block {
+	width: 300px;
+	height: 200px;
+	border: 1px solid #000;
+	background-color: darkorange;
+	background-image: url(https://c7.hotpng.com/preview/724/668/13/rage-comic-internet-troll-trollface-clip-art-troll.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: auto;
+	margin-right: auto;
+	transition: all 4s;
+	/* display: none; */
+}
+.show-toggle {
+	font-size: 30px;
+}
+
+.toggle {
+	display: none;
+	/* margin-top: 200vh; */
+}
+.toggle:target {
+	display: block;
+}
+.toggle:checked + .translateX {
+	transform: translateX(50px);
+}
+.translate:hover {
+	transform: perspective(100px) translateZ(-50px);
+}
+.scaleX:hover {
+	transform: perspective(1000px) scale(0.5);
+}
+.rotate:hover {
+	transform: rotate(0.5turn);
+	transform-origin: 20px 20px;
+}
+.skew:hover {
+	transform: perspective(100px) skewY(45deg);
+}
+.animation {
+	width: 150px;
+	/* animation: salut 10s cubic-bezier(0.11, 1, 0.94, -0) 1s 1; */
+}
+@keyframes salut {
+	0% {
+		transform: scale(0.5);
+		background-color: #f00;
+	}
+	50% {
+		transform: scale(3.5);
+		background-color: #00f;
+	}
+	100% {
+		transform: scale(0.5);
+		background-color: #f00;
+	}
+}
+div.filter:hover {
+	/* filter: blur(20px); */
+	/* filter: brightness(50%); */
+	/* filter: hue-rotate(120deg); */
+	/* filter: saturate(150%); */
+	/* filter: contrast(300%); */
+	/* filter: grayscale(0.5); */
+	/* filter: sepia(100%); */
+	/* filter: opacity(); */
+	box-shadow: 4px 4px 0 #f00;
+	filter: drop-shadow(4px 4px rgb(23, 209, 39));
+	transform: perspective(100px);
+}
+img.filter {
+	transform: perspective(1010px);
+}
+img.filter:hover {
+	transform: perspective(1010px) translateY(500px);
+}
+.filter:hover {
+	/* filter: blur(0); */
+	/* filter: brightness(400%); */
+	/* filter: hue-rotate(0); */
+	/* filter: saturate(0); */
+	/* filter: contrast(50%); */
+	/* filter: grayscale(0); */
+	/* filter: sepia(0); */
+	/* filter: opacity(); */
+}

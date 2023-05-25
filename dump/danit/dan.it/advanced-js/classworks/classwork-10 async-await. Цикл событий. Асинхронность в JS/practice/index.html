@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<button type="button" id="getAllBooks">get all books</button>
+
+		<form id="createBookForm">
+			<h2>Create book</h2>
+			<input type="text" id="author" placeholder="author" />
+			<input type="text" id="title" placeholder="title" />
+			<input type="text" id="price" placeholder="price" />
+			<input type="submit" value="create" id="createBookFormBtn" />
+		</form>
+
+		<form id="searchBookForm">
+			<h2>search book</h2>
+			<input type="text" id="search" placeholder="search" />
+			<input type="submit" value="search" />
+		</form>
+
+		<div id="root"></div>
+
+		<script src="./js/index.js" type="module"></script>
+	</body>
+</html>

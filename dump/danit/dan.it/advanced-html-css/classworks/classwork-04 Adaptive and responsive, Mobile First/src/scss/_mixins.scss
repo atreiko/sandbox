@@ -1,0 +1,10 @@
+@mixin transform($property) {
+	-webkit-transform: $property;
+	-ms-transform: $property;
+	transform: $property;
+}
+
+%list-reset {
+	list-style: none;
+	padding-left: 0;
+}

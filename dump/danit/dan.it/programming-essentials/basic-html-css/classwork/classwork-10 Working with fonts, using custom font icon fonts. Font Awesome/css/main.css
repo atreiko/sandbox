@@ -1,0 +1,10 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+.page-body {
+	margin: 0;
+	padding: 50px 100px;
+	font-size: 28px;
+}

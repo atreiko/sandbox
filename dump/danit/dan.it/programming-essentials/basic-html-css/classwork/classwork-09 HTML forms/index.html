@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML forms</title>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body class="page-body">
+		<!-- <ul class="list">
+			<li class="list__item">
+				<img
+					src="https://compass-ssl.xboxlive.com/assets/24/03/24032b5f-3d3c-4c23-8cd8-df5de8ec9e8b.jpg?n=background_asset_sm.jpg"
+					alt=""
+					width="300"
+					height="167"
+				/>
+			</li>
+			<li class="list__item">
+				<img
+					src="https://compass-ssl.xboxlive.com/assets/24/03/24032b5f-3d3c-4c23-8cd8-df5de8ec9e8b.jpg?n=background_asset_sm.jpg"
+					alt=""
+					width="300"
+					height="167"
+				/>
+			</li>
+			<li class="list__item">
+				<img
+					src="https://compass-ssl.xboxlive.com/assets/24/03/24032b5f-3d3c-4c23-8cd8-df5de8ec9e8b.jpg?n=background_asset_sm.jpg"
+					alt=""
+					width="300"
+					height="167"
+				/>
+			</li>
+			<li class="list__item">
+				<img
+					src="https://compass-ssl.xboxlive.com/assets/24/03/24032b5f-3d3c-4c23-8cd8-df5de8ec9e8b.jpg?n=background_asset_sm.jpg"
+					alt=""
+					width="300"
+					height="167"
+				/>
+			</li>
+		</ul> -->
+		<form action="#">
+			<input
+				type="text"
+				class="form-input"
+				value=""
+				placeholder="Print your text"
+				name="user-name"
+				id="user-name-id"
+			/>
+			<label for="user-name-id" class="form-label">User name</label>
+
+			<label class="form-label">
+				User email
+				<input
+					type="email"
+					class="form-input"
+					name="user-mail"
+					id="user-mail-id"
+					placeholder="Print your email"
+				/>
+			</label>
+
+			<label class="form-label">
+				User pass
+				<input
+					type="password"
+					class="form-input"
+					name="user-pass"
+					id="user-pass-id"
+					placeholder="Print your pass"
+					required
+					readonly
+					disabled
+				/>
+			</label>
+
+			<label class="form-label">
+				User tel
+				<input
+					type="tel"
+					class="form-input"
+					name="user-tel"
+					id="user-tel-id"
+					placeholder="Print your tel"
+				/>
+			</label>
+
+			<label class="form-label">
+				User count
+				<input
+					type="number"
+					class="form-input"
+					name="user-count"
+					id="user-count-id"
+					placeholder="Print your count"
+				/>
+			</label>
+
+			<input
+				type="checkbox"
+				class="form-input form-checkbox"
+				name="user-agree"
+				id="user-agree-id"
+				checked
+			/>
+			<!-- <input
+				type="checkbox"
+				class="form-input form-checkbox"
+				name="user-agree"
+				id="user-agree-id2"
+				checked
+			/>
+			<input
+				type="checkbox"
+				class="form-input form-checkbox"
+				name="user-agree"
+				id="user-agree-id3"
+				checked
+			/> -->
+			<label for="user-agree-id" class="form-label">
+				User agree
+			</label>
+
+			<label class="form-label">
+				red
+				<input
+					type="radio"
+					class="form-input form-radio"
+					name="user-color"
+					id="user-color-id"
+					checked
+					value="red"
+				/>
+			</label>
+			<label class="form-label">
+				green
+				<input
+					type="radio"
+					class="form-input form-radio"
+					name="user-color"
+					id="user-color-id-2"
+					checked
+					value="green"
+				/>
+			</label>
+			<label class="form-label">
+				blue
+				<input
+					type="radio"
+					class="form-input form-radio"
+					name="user-color"
+					id="user-color-id-3"
+					checked
+					value="blue"
+				/>
+			</label>
+
+			<fieldset>
+				<legend>fields group</legend>
+				<input type="date" name="" id="" />
+				<input type="color" name="" id="" />
+				<input type="file" name="" id="" />
+			</fieldset>
+
+			<select name="" id="">
+				<option value="">EN</option>
+				<option value="">DE</option>
+			</select>
+
+			<input type="submit" value="Send" />
+			<button type="submit">Send</button>
+
+			<button type="button">button</button>
+		</form>
+		<!-- 
+http://127.0.0.1:9000/programming-essentials/basic-html-css/classwork/classwork-09%20HTML%20forms/index.html?user-name=Roman#
+
+name=value
+         -->
+	</body>
+</html>

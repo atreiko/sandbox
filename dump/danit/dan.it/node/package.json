@@ -1,0 +1,51 @@
+{
+  "name": "fe-20-node-server",
+  "version": "1.0.0",
+  "description": "Node.js integration with Heroku",
+  "main": "src/index.js",
+  "scripts": {
+    "start:dev": "node_modules/.bin/nodemon",
+    "build-babel": "babel -d ./build ./src -s --copy-files",
+    "build": "npm run build-babel",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/dan-it-samples/fe-20-node-server.git"
+  },
+  "keywords": [
+    "node.js",
+    "heroku"
+  ],
+  "author": {
+    "name": "Sergey Donchenko",
+    "email": "sergey.donchenko@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/dan-it-samples/fe-20-node-server/issues"
+  },
+  "homepage": "https://gitlab.com/dan-it-samples/fe-20-node-server#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.10",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.10",
+    "babel-loader": "^8.2.2",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "argon2": "^0.27.1",
+    "celebrate": "^14.0.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mailgun-js": "^0.22.0",
+    "mongoose": "^5.12.2"
+  }
+}

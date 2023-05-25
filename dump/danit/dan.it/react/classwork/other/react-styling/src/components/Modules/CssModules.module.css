@@ -1,0 +1,12 @@
+.root {
+  color: red;
+}
+
+.heading {
+  font-size: 24px;
+}
+
+:global .global-class {
+  font-style: italic;
+}
+/*# sourceMappingURL=CssModules.module.css.map */

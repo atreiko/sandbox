@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+.page__body {
+	background-color: rgb(11, 17, 25);
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+}
+
+.container {
+	max-width: 100%;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media (min-width: 768px) {
+		max-width: 750px;
+	}
+}
+.form {
+	@media (min-width: 768px) {
+		display: flex;
+	}
+}

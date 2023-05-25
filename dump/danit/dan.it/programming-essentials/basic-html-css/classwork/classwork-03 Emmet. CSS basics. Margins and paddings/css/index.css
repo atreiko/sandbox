@@ -1,0 +1,118 @@
+html {
+	font-size: 100%;
+}
+*,
+*::after,
+*::before {
+	/* box-sizing: content-box; */
+	box-sizing: border-box;
+}
+/* .content * {
+}
+
+.content > * {
+} */
+
+.page-body {
+	margin: 0;
+	font-size: 16px;
+}
+body {
+	margin: 30px;
+}
+.page-header {
+	background-color: #6495ed;
+	text-align: center;
+	font-size: 32px;
+	line-height: 1.25;
+	padding: 40px;
+	color: #fff;
+}
+
+.page-header.home-page {
+	color: rgba(255, 255, 255, 0);
+}
+
+.main-content {
+	font-size: 2em; /* 32px */
+	margin: 10px 20px;
+	/* margin: 10% 20px 10%;
+	margin: 10.5px 20px 10px 20x; /* 1em = 1 * element font size */
+
+	/* margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10%;
+	margin-bottom: 10%; */
+
+	padding: 10% 15px; /* 15pt */
+	border: 6px groove blue;
+	min-height: 100px;
+}
+p.text-block {
+	background-color: tomato;
+}
+.text-block {
+	background-color: ghostwhite;
+	padding: 10px 15px;
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* 
+p
+p.text-block
+.text-block
+
+1                   10              100             1000
+tag,               class, attr      id           inline styles
+pseudo-el,         pseudo-class                  !important
+
+*/
+
+.content {
+	/* text-align: center; */
+}
+.content > .text-block {
+	margin-left: 40px;
+}
+.post > .text-block {
+	background-color: whitesmoke;
+}
+
+.main-menu__item {
+}
+
+.page-header.inner-page {
+	background-color: wheat;
+}
+/* 
+reset{
+    font-size: 0;
+}
+} */
+.link {
+	font-size: 18px;
+}
+
+/* 
+normalize{
+    font-size: 16px;
+}
+*/
+.link {
+	font-size: 18px;
+}
+.main-content ul {
+	font-size: 18px;
+}
+
+.w300 {
+	width: 300px;
+}
+.margin20_auto {
+	margin: 20px auto !important;
+}
+.some-text {
+	margin-top: 40px;
+}

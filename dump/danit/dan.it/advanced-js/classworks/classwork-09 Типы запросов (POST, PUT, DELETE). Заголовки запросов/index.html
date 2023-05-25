@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form id="create-post">
+			<div>
+				<input type="text" placeholder="Title" required id="title" />
+			</div>
+			<div>
+				<textarea placeholder="Intro" required id="intro">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolores?
+</textarea
+				>
+			</div>
+
+			<textarea placeholder="Full Text" required id="text">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolores? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum corporis harum consequatur autem quasi provident et optio perspiciatis eos dolores eius aliquam excepturi, fuga distinctio possimus minus in, reiciendis voluptatum.</textarea
+			>
+
+			<div><input type="date" required id="date" /></div>
+			<div>
+				<input type="text" placeholder="Author" required id="author" />
+			</div>
+			<input type="submit" value="SEND!" />
+		</form>
+
+		<div id="root"></div>
+		<script src="./index.js"></script>
+	</body>
+</html>

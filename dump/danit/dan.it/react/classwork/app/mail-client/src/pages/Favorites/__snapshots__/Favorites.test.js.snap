@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Favorites.js Favorites snapshot 1`] = `"<div><div data-testid=\\"test-email\\">Test email 112</div><div data-testid=\\"test-email\\">Test email 113</div></div>"`;
