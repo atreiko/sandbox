@@ -1,0 +1,40 @@
+{
+  "countries": [
+    {
+      "id": 1,
+      "title": "New Zeeland",
+      "population": "5 000 000",
+      "image": "/images/new-zeeland.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "South Korea",
+      "population": "52 000 000",
+      "image": "/images/south-korea.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "Japan",
+      "population": "32 000 000",
+      "image": "/images/japan.webp"
+    },
+    {
+      "id": 4,
+      "title": "Canada",
+      "population": "38 000 000",
+      "image": "/images/canada.jpeg"
+    },
+    {
+      "id": 123,
+      "image": "qwe",
+      "title": "qwe",
+      "population": "qwe"
+    },
+    {
+      "id": 5,
+      "image": "/images/south-korea.jpeg",
+      "population": "1000000",
+      "title": "china"
+    }
+  ]
+}

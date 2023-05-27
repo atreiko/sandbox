@@ -1,0 +1,57 @@
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 650px;
+  padding: 1rem;
+}
+
+.cards div {
+  border: 2px solid #747474;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.home-btn {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container.country {
+  flex-direction: column;
+}
+
+.country .cards {
+  justify-content: center;
+}
+
+.countries-btn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
