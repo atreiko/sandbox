@@ -1,0 +1,10 @@
+@import "../../node_modules/reset-css/sass/reset";
+@import "_variables";
+@import "_mixins";
+@import "_reset";
+@import "sections/header";
+@import "sections/banner";
+
+body {
+  color: white;
+}

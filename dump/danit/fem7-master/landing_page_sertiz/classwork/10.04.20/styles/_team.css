@@ -1,0 +1,54 @@
+/* Oleh Filozof */
+.team h1 {
+	/* width: 512px; */
+	/* height: 18px; */
+	/* margin: 2px auto 28.5px; */
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #333333;
+	margin-bottom: 30px;
+}
+
+.team p {
+	/* width: 798px; */
+	/* height: 24px; */
+	/* margin: 0 402px 0 418px; */
+	font-family: Lato, sans-serif;
+	text-align: center;
+	font-size: 17px;
+	line-height: 24px;
+	color: #4d4943;
+}
+
+.team__members {
+	display: inline-block;
+	/* width: 1200px; */
+	/* height: 360px; */
+	/* margin: 0 217px; */
+}
+
+.member {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 4px;
+}
+
+.member__name {
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+	transform: translateX(-50%);
+	background-color: #333333;
+	width: 90%;
+	padding: 1.0625rem;
+	font-family: Lato, sans-serif;
+	font-size: 0.875rem;
+	color: hsl(0, 0%, 100%);
+	text-align: center;
+}
+
+/*  Oleh Filozof */

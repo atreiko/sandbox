@@ -1,0 +1,78 @@
+.areas {
+	display: grid;
+	justify-items: center;
+}
+
+.areas__header {
+	text-align: center;
+}
+
+.areas h1 {
+	font-size: 22px;
+	text-transform: uppercase;
+	margin: 0 auto 28px;
+	font-weight: bold;
+}
+
+.areas__main {
+	display: flex;
+}
+
+.areas__gallery {
+	display: grid;
+	grid: auto auto / auto auto;
+	gap: 10px;
+	margin-right: 50px;
+
+	/* width: 600px;
+	flex: none; */
+}
+
+/* .areas .gallery__item {
+	display: inline-block;
+} */
+
+.area.card {
+	position: relative;
+}
+
+.area .card__name {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	z-index: 1;
+	color: white;
+	background: #333;
+	padding: 10px 20px;
+}
+
+/* .areas__description {
+	display: grid;
+	grid-auto-rows: min-content;
+	justify-items: left;
+	gap: 2rem;
+} */
+
+.areas__description > *:not(:last-child) {
+	margin-bottom: 2rem;
+}
+
+/* возможный вариант, используя схлопывание марджинов */
+/* .areas__description > * {
+	margin: 2rem 0
+} */
+
+.areas__description h2 {
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.areas__description button {
+	text-transform: capitalize;
+	padding: 20px 25px;
+	border-radius: 5px;
+	font-size: 14px;
+	color: white;
+	background: #f48e0b;
+}

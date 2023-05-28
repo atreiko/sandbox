@@ -1,0 +1,191 @@
+@import "variables"; // variables импортируем первыми, поэтому они будут доступны во всех остальных файлах, которые идут после них
+@import "mixins";
+@import "blocks/navbar";
+// можно писать без _
+
+/* вспомогательные стили */
+body {
+  display: grid;
+  gap: 2em;
+  justify-items: center;
+}
+
+section {
+  padding: 1em;
+  display: grid;
+  gap: 1em;
+}
+
+/* ПЕРЕМЕННЫЕ */
+// можно использовать переменные
+.green {
+  color: green;
+}
+
+// глобальная переменная SASS, будет доступна внутри всех селекторов
+$color: magenta;
+$font: Arial, sans-serif;
+// имеет смысл вынести все глобальные переменные в отдельный файл _variables например
+
+// внимание! существуют также CSS переменные
+// CSS переменные
+:root {
+  --color: blue;
+}
+
+.colored {
+  color: $color;
+}
+
+.has-border {
+  border: thin solid $color;
+  padding: 1em;
+}
+
+.circle {
+  // локальная переменная, будет доступна внутри .circle
+  $size: 200px;
+  width: $size;
+  height: $size;
+  // можно совершать математические операции
+  border-radius: $size / 2;
+  background: $color;
+  border: medium solid var(--color);
+}
+
+/* ВЛОЖЕННЫЕ СЕЛЕКТОРЫ */
+// вложенные селекторы можно писать, вкладывая их один в другой
+// получим section h1 и section p
+section {
+  h1 {
+    font-family: $font;
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+}
+
+/* родительский селектор и BEM */
+
+// блоком можно считать элемент интерфейса,
+// компоненты которого структурно и логически связаны и не имеют смысла друг без друга
+// блок можно перенести в другое место на странице как единое целое
+// для таких элементов удобно использовать особый синтаксис наименования классов
+
+// .блок__элемент--модификатор
+// имя класса дочернего структурного элемента включает в себя имя родительского класса и отделяется при помощи двойного подчеркивания __
+
+// имеет смысл выносить такие модули в отдельные файлы в папку modules например
+.popup {
+  border: thin solid black;
+  padding: 1em;
+  display: grid;
+  justify-items: center;
+  gap: 1em;
+
+  &__title {
+    font-size: 1.5em;
+  }
+
+  &__description {
+    font-size: 1.2em;
+  }
+  // уровень вложенности элемента не влияет на именование класса - родительским остается корневой класс (блок)
+  // элементы элементов не допускаются т.е. нельзя писать .popup__description__img, нужно .popup__img
+  &__img {
+    width: 3em;
+
+    // родительский селектор часто используется с псведоклассами и псевдоэлементами
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__button {
+    font-size: 1.2em;
+    border: thin solid black;
+    background: gold;
+    border-radius: 20px;
+
+    &::before {
+      content: "\1F518";
+      margin-right: 1em;
+    }
+  }
+}
+
+// модификаторы (пишутся в конце через -- обозначают разновидность или состояние блока
+// как варианты состояний, могут быть например --enabled --disabled, --active --inactive
+// обычно навешиваются на корневой блок, но могут быть и на его подэлементах
+.message {
+  border: medium solid gray;
+  padding: 1em;
+
+  &--success {
+    border-color: green;
+  }
+
+  &--error {
+    border-color: red;
+  }
+
+  &__title {
+    font-size: 1.5em;
+  }
+}
+
+/* МАССИВЫ */
+
+// lists - аналог массивов
+// можно итерировать с помощью @each...in
+// интерполяция: можно включать переменную в имя селектора с помощью #{}
+$sizes: 40px, 50px, 80px;
+
+@each $size in $sizes {
+  .icon-#{$size} {
+    font-size: $size;
+    height: $size;
+    width: $size;
+  }
+}
+
+/* МИКСИНЫ */
+
+@mixin reset-list($var: 0) {
+  margin: $var;
+  padding: $var;
+  list-style: none;
+}
+
+ul {
+  @include reset-list;
+}
+// имеет смысл вынести миксины в отдельный файл _mixins
+
+/* ЭКСТЕНДЫ */
+// placeholder
+.msg {
+  border: medium solid gray;
+  padding: 1em;
+  font-family: $font-stack;
+
+  &--success {
+    @extend .msg;
+    border-color: green;
+  }
+
+  &--error {
+    @extend .msg;
+    border-color: red;
+  }
+}
+
+/* СТРУКТУРА ФАЙЛОВ СТИЛЕЙ */
+
+// отдельные файлы для _variables, _mixins, _reset в корне
+// папка modules для модулей (компонентов)
+// папка sections для секций страницы
+
+// чтобы импортируемые "зависимые" файлы (т.н. partials) не билдились отдельно, а включались в родительский, нужно начинать их имя с нижнего почеркивания _

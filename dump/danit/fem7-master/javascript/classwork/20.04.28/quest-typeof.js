@@ -1,0 +1,25 @@
+const types = [
+	typeof 0,
+	typeof "typeof",
+	typeof "100",
+	typeof Infinity,
+	typeof String,
+	typeof NaN,
+	typeof 1e-3,
+	typeof alert,
+	typeof Math,
+	typeof 0o377,
+	typeof "\u34ff",
+	typeof true,
+	typeof 0x129fb0,
+	typeof null,
+	typeof 2e22,
+	typeof undefined,
+	typeof 0b1,
+	typeof `${typeof 12}`,
+	typeof [],
+	typeof Symbol("id"),
+	// typeof 134455n,
+];
+// console.log(types[21]);
+// console.log(types);

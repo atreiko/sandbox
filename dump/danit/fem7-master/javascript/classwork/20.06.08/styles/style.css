@@ -1,0 +1,72 @@
+/* @import 'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'; */
+
+body {
+  display: grid;
+  gap: 3em;
+  padding: 3em;
+  place-content: center;
+  /* font-size: 1.5em; */
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* @import 'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'; */
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+button {
+  font-size: 20px;
+  padding: 5px;
+}
+
+#parent {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 5px solid green;
+}
+
+#child {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  margin: 50px;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border: 5px solid black;
+}
+
+.blue {
+  color: blue;
+}
+
+#panel,
+#js-slide-toggle {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+#animation {
+  display: grid;
+  gap: 2em;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+.faded {
+  transition: all 1s;
+  opacity: 0.5;
+}

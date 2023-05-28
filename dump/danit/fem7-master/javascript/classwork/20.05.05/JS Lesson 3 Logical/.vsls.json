@@ -1,0 +1,6 @@
+{
+	"$schema": "http://json.schemastore.org/vsls",
+	"gitignore": "exclude",
+	"excludeFiles": ["quest*", "*.sol.*", ".sidenotes/**"],
+	"hideFiles": ["node_modules"]
+}

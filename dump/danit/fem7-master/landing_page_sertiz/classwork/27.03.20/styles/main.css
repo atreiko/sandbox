@@ -1,0 +1,584 @@
+@import "reset.css";
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* USKOVA */
+
+body {
+    /* background: grey; */
+    font-family: "Montserrat", sans-serif;
+    /* background: black; */
+}
+
+.page-content {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.intro {
+    position: relative;
+    height: 900px;
+    /* padding-left: 215px;
+    padding-top: 531px; */
+    background-image: url(../img/intro.jpg);
+    background-repeat: no-repeat;
+    margin-bottom: 71px;
+}
+
+.intro-text {
+    position: absolute;
+    display: inline-block;
+    color: #ffffff;
+    left: 246px;
+    bottom: 149px;
+    /* border: 1px solid white;
+    padding: 10px; */
+}
+
+.heading-sertiz {
+    margin-bottom: 20px;
+    font-size: 48px;
+    line-height: 59px;
+    text-transform: uppercase;
+    color: white;
+    /*position: absolute;*/
+    /*top: 531px;*/
+    /*left: 215px;*/
+}
+
+.first-paragraph {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+}
+
+.slogan {
+    width: 833px;
+    margin-top: 22px;
+    font-size: 54px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white;
+    padding: 40px 5px 39px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.is-Accented {
+    color: #f48e0b;
+}
+
+.intro-text span {
+    margin-right: 40px;
+}
+
+
+/* TAMARA */
+
+.awards {
+    width: auto;
+    width: 1578px;
+    height: 873px;
+    text-align: center;
+    font-family: "Montserrat", "Arial", sans-seri;
+    margin: 128px 0 70px;
+}
+
+.awards__container {
+    margin: 0 auto;
+}
+
+.colored-line::after {
+    display: block;
+    background: linear-gradient(0deg, #f1ad1d, #f1ad1d), #f48e0b;
+    margin: 50px auto 50px auto;
+    content: " ";
+    width: 62px;
+    height: 7px;
+}
+
+.awards__slogan {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 0 auto 28.5px;
+    font-weight: bold;
+}
+
+.awards__about-us {
+    font-size: 17px;
+    line-height: 24px;
+}
+
+
+/* TAMARA */
+
+.layer2-about-us .menutop {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* НЕСТЕРЕНКО */
+
+
+/* Рыженкова */
+
+.nav-container {
+    width: 1169px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 33px;
+    border-bottom: 3px solid #F1B128;
+}
+
+.nav-logo {
+    float: left;
+}
+
+.nav-menu {
+    float: right;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
+
+.nav-menu>li:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+.nav-item {
+    display: inline-block;
+    /* margin: 0 20px; */
+    /* float: right; */
+}
+
+.nav-link {
+    font-size: 18px;
+    /* text-decoration: none; */
+    text-transform: uppercase;
+    /* color: inherit; */
+    /* line-height: 22px; */
+    /* padding-left: 53px; */
+}
+
+.nav-link:hover {
+    color: #F1B128;
+}
+
+
+/* .nav-line::after {
+    display: block;
+    background: #F1B128;
+    margin-top: 22px;
+    content: " ";
+    width: 1169px;
+    height: 3px;
+} */
+
+
+/* Рыженкова */
+
+
+/* .menutop {
+    border-bottom: 3px solid #f1b128;
+}
+
+.menutop ul {
+    display: flex;
+    justify-content: flex-end;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    list-style: none;
+}
+
+.menutop ul li {
+    display: inline;
+    margin: 30px;
+}
+
+.menutop ul li a {
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+#hello {
+    color: #f1b128;
+} */
+
+
+/* Рыженкова */
+
+
+/* НЕСТЕРЕНКО */
+
+
+/* Андрей */
+
+.consulting {
+    position: absolute;
+    width: 1600px;
+    height: 493px;
+    left: 0px;
+    top: 1731px;
+}
+
+.description {
+    position: absolute;
+    width: 594px;
+    height: 317px;
+    left: 814px;
+    top: 178px;
+    background: #ffffff;
+}
+
+.whattext {
+    position: absolute;
+    width: 360px;
+    height: 18px;
+    left: 620px;
+    top: 0px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 18px;
+    /* identical to box height, or 82% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.weare {
+    position: absolute;
+    width: 798px;
+    height: 24px;
+    left: 400px;
+    top: 46.5px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 24px;
+    /* identical to box height, or 141% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #4d4943;
+}
+
+.business {
+    position: absolute;
+    top: 180px;
+    width: 253px;
+    height: 18px;
+    left: 814px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.cons1 {
+    margin-left: 5px;
+    color: #f1ad1d;
+}
+
+.blockconsulting {
+    position: absolute;
+    width: 117px;
+    height: 42px;
+    left: 228px;
+    top: 273px;
+    background: #333333;
+}
+
+.blockphoto {
+    position: absolute;
+    width: 117px;
+    height: 42px;
+    left: 530px;
+    top: 273px;
+    background: #333333;
+}
+
+.blockweb {
+    position: absolute;
+    width: 117px;
+    height: 42px;
+    left: 228px;
+    top: 439px;
+    background: #333333;
+}
+
+.blockadvertising {
+    position: absolute;
+    width: 117px;
+    height: 42px;
+    left: 530px;
+    top: 439px;
+    background: #333333;
+}
+
+.consulting1 {
+    position: absolute;
+    top: 290px;
+    width: 97px;
+    height: 12px;
+    left: 242px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 12px;
+    /* identical to box height, or 86% */
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.photography {
+    position: absolute;
+    top: 290px;
+    width: 109px;
+    height: 12px;
+    left: 545px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 12px;
+    /* identical to box height, or 86% */
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.webdesign {
+    position: absolute;
+    top: 456px;
+    width: 104px;
+    height: 12px;
+    left: 242px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 12px;
+    /* identical to box height, or 86% */
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.advertising {
+    position: absolute;
+    top: 456px;
+    width: 101px;
+    height: 12px;
+    left: 544px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 12px;
+    /* identical to box height, or 86% */
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.blockimgs1 {
+    position: absolute;
+    width: 270px;
+    height: 148px;
+    left: 215px;
+    top: 178px;
+    background: url(../img/asd.jpg);
+}
+
+.blockimgs2 {
+    position: absolute;
+    width: 270px;
+    height: 148px;
+    left: 515px;
+    top: 178px;
+    background: url(../img/consulting.jpg);
+}
+
+.blockimgs3 {
+    position: absolute;
+    width: 270px;
+    height: 148px;
+    left: 215px;
+    top: 348px;
+    background: url(../img/asd1.jpg);
+}
+
+.blockimgs4 {
+    position: absolute;
+    width: 270px;
+    height: 148px;
+    left: 515px;
+    top: 348px;
+    background: url(../img/asd2.jpg);
+}
+
+.blockorange1 {
+    position: absolute;
+    width: 176px;
+    height: 51px;
+    left: 815px;
+    top: 444px;
+    background: #f1ad1d;
+}
+
+.checkour {
+    position: absolute;
+    width: 151px;
+    height: 12px;
+    left: 27px;
+    top: 23px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 12px;
+    /* identical to box height, or 86% */
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 12px;
+    /* identical to box height, or 86% */
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.areas {
+    position: absolute;
+    width: 570px;
+    height: 317px;
+    left: 0px;
+    top: 0px;
+}
+
+
+/* Андрей */
+
+
+/* Kateryna */
+
+.black-image {
+    /*position: relative;*/
+    width: 1600px;
+    height: 380px;
+    background-image: url(../img/Layer2.jpg);
+    background-repeat: no-repeat;
+    margin-top: 125px;
+}
+
+.black-image-h1 {
+    /*position: absolute;
+    top: 151px;
+    left: 589px;
+    display: inline-block;*/
+    margin: 151px auto 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+}
+
+.ideascolor {
+    color: #f1ad1d;
+}
+
+
+/* Kateryna */
+
+
+/* Oleh Filozof */
+
+.team {
+    margin-top: 113px;
+    width: 1600px;
+    height: 873px;
+    background-color: rgb(255, 255, 255);
+}
+
+.secret_h1 {
+    width: 512px;
+    height: 18px;
+    margin: 2px auto 28.5px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.secret_p {
+    width: 798px;
+    height: 24px;
+    margin: 0 402px 0 418px;
+    font-family: Lato, sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    color: #4d4943;
+}
+
+.team_members {
+    display: inline-block;
+    width: 1200px;
+    height: 360px;
+    margin: 0 217px;
+}
+
+.member {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.team_names {
+    position: absolute;
+    top: 119px;
+    left: 15px;
+    background-color: #333333;
+    padding: 17px 55px 15px 17px;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+
+
+/*  Oleh Filozof */

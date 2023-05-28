@@ -1,0 +1,161 @@
+/* .offer-container {
+	position: relative;
+	margin: 200px auto 0;
+	width: 1200px;
+	height: 270px;
+} */
+
+.offer-heading {
+	position: absolute;
+	text-align: center;
+	left: 130px;
+}
+
+.offer-border::after {
+	content: "";
+	margin: 0 0 0 115px;
+}
+
+.offer-items-block {
+	display: flex;
+	justify-content: space-around;
+	max-width: 1172px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.offer-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 275px;
+	margin: 1em;
+}
+
+.offer-item-head {
+	color: white;
+	width: 275px;
+	height: 59px;
+	font-weight: bold;
+	font-size: 18px;
+	background-color: #333333;
+}
+
+.offer-head-text {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.offer-item-icon {
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 29px auto;
+}
+
+.offer-item-text {
+	font-size: 14px;
+	text-align: center;
+	padding: 0 5px;
+	line-height: 17px;
+	color: #505050;
+}
+
+.offer-item-border {
+	margin: 37px auto;
+	width: 60px;
+}
+
+.offer-item-border::after {
+	content: "";
+	display: inline-block;
+	width: 60px;
+	border-bottom: 6px solid #f1ad1d;
+}
+
+.offer-item-bold {
+	font-family: "Lato", sans-serif;
+	font-size: 18px;
+	text-align: center;
+	color: #505050;
+}
+
+.offer-item-list {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 13px 0;
+	color: #505050;
+}
+
+.offer-long-border::after {
+	content: "";
+	display: inline-block;
+	border-bottom: 3px solid black;
+	width: 273px;
+}
+
+/* ICONS ============
+================ */
+
+.item_icon-1 {
+	background-image: url("../img/offer-icon-1.png");
+	width: 72px;
+	height: 65px;
+}
+
+.item_icon-2 {
+	background-image: url("../img/offer-icon-2.png");
+	width: 71px;
+	height: 50px;
+	margin: 37px auto;
+}
+
+.item_icon-3 {
+	background-image: url("../img/offer-icon-3.png");
+	width: 71px;
+	height: 79px;
+	margin-bottom: 15px;
+}
+
+.item_icon-4 {
+	background-image: url("../img/offer-icon-4.png");
+	width: 71px;
+	height: 65px;
+	margin-bottom: 29px;
+}
+
+.fas,
+.far {
+	display: inline-block;
+	font-size: 3rem;
+	align-self: center;
+	margin: 0.5em;
+}
+
+/* .far {
+    display: inline-block;
+    font-size: 3rem;
+    align-self: center;
+    margin: 0.5em;
+} */
+
+.offer-item > span:active {
+	animation: icon-deviation 90ms alternate infinite ease;
+}
+
+@keyframes icon-deviation {
+	from {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+		color: red;
+	}
+	to {
+		transform: scale(1);
+	}
+}

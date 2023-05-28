@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+		<section>
+			<h1> Схлопывание вертикальных марджинов блочных элементов</h1>
+			<p> Позволяет избежать появления двойных марджинов между текстовыми элементами</p>
+			<div class="example-container">
+			<h1 class="block">heading</h1>
+			<p class="block">paragraph</p>
+			<p class="block">paragraph</p>
+		</section>
+
+		<section>
+			<h1>Схлопывание марджинов на родительском и дочернем элементах</h1>
+			<h2>margin дочернего элемента выступает за пределы родителя, если ему ничего не мешает </h2>
+			<div class="example-container overflowed-margin">
+				<div class="parent">
+			<div class="child"> Child </div>
+		</div>
+			</div>
+
+			<h2> Способы предотвращения этого эффекта (с обеих сторон)</h2>
+
+			<h3>устанавливаем overflow:auto на родителя</h3>
+			<div class="example-container fixed-with-overflow">
+				<div class="parent">
+			<div class="child"> Child </div>
+		</div>
+			</div>
+
+				<h3>устанавливаем display:flex, display:grid или display:inline-block на родителя</h3>
+			<div class="example-container fixed-with-display">
+				<div class="parent">
+			<div class="child"> Child </div>
+		</div>
+			</div>
+
+			<h3>"выдергиваем" parent из потока (устанавливаем position: absolute или float, </h3>
+			<div class="example-container fixed-with-position">
+				<div class="parent">
+			<div class="child"> Child </div>
+		</div>
+			</div>
+
+			<h2>способы предотвращения overflow марджина дочернего элемента с одной из сторон</h2>
+				<h3>margin дочернего элемента упирается сверху в контент родителя:</h3>
+			<div class="example-container limited-by-content">
+				<div class="parent"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia eveniet quo impedit recusandae, consectetur ducimus minima odit sequi! Maxime, placeat. Nesciunt, accusamus odit sit rem nobis ex ad eius doloribus.
+			<div class="child"> Child </div>
+		</div>
+			</div>
+
+			<h3>margin дочернего элемента упирается сверху в паддинг родителя:</h3>
+			<div class="example-container limited-by-padding">
+				<div class="parent">
+			<div class="child"> Child </div>
+		</div>
+			</div>
+
+			<h3>margin дочернего элемента упирается сверху в border родителя:</h3>
+			<div class="example-container limited-by-border">
+				<div class="parent">
+			<div class="child"> Child </div>
+		</div>
+			</div>
+
+
+
+		</section>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "basic-js13--jquery-demo",
+  "quokka": {
+    "plugins": [
+      "jsdom-quokka-plugin"
+    ],
+    "jsdom": {
+      "file": "index.html"
+    }
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}

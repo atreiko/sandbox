@@ -1,0 +1,37 @@
+.intro {
+	position: relative;
+	height: 900px;
+	background-image: url("../img/intro.jpg");
+	background-repeat: no-repeat;
+}
+
+.intro__text {
+	position: absolute;
+	display: grid;
+	gap: 40px;
+	color: #ffffff;
+	left: 246px;
+	bottom: 149px;
+}
+
+.intro__heading {
+	font-size: 3rem;
+}
+
+.intro__about {
+	font-size: 1.125rem;
+	line-height: 1.22;
+	color: white;
+}
+
+.intro__slogan {
+	font-size: 3.375rem;
+	font-weight: bold;
+	border: 1px solid white;
+	padding: 40px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.intro__text span {
+	margin-right: 40px;
+}

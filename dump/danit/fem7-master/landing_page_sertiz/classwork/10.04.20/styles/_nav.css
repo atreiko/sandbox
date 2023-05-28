@@ -1,0 +1,31 @@
+.nav {
+	/* width: 1200px; */
+	padding: 20px;
+	margin: 0 auto;
+	border-bottom: 3px solid #F1B128;
+}
+
+.nav__logo {
+	float: left;
+}
+
+.nav__menu {
+	float: right;
+}
+
+.nav__menu > li:not(:last-child) {
+	margin-right: 30px;
+}
+
+.nav-item {
+	display: inline-block;
+}
+
+.nav-link {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.nav-link:hover {
+	color: #F1B128;
+}

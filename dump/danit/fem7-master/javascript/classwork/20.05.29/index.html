@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM demo</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- <script src="js/not-deferred-script.js"></script> -->
+  <!-- <script src="js/deferred-script.js" defer></script> -->
+  <!-- <script src="js/dom-navigation.js" defer></script> -->
+  <!-- <script src="js/properties-attributes.js" defer></script> -->
+  <!-- <script src="js/inner-outer-content.js" defer></script> -->
+  <!-- <script src="js/search.js" defer></script> -->
+  <!-- <script src="js/modification-delete-insert.js" defer></script> -->
+  <!-- <script src="js/classes.js" defer></script> -->
+  <script src="js/styles.js" defer></script>
+  <script>
+    // window.DANIT_window = 'Я добавлен в глобальный объект через window.';
+    globalThis.DANIT_global = 'Я добавлен в глобальный объект через globalThis.';
+    // var DANIT_var = 'Я добавлен в глобальный объект через var';
+  </script>
+
+  <script type="module">
+    // window.DANIT_window_module = 'Я добавлен в глобальный объект через window.';
+    globalThis.DANIT_global_module = 'Я добавлен в глобальный объект через globalThis.';
+    // var DANIT_var_module = 'Меня не получится добавить через var, т.к я нахожусь в модуле'; // не сработает
+  </script>
+
+</head>
+
+<body>
+  <h1 style="color: green;" data-danit="fem7" title="danit demo">Demo<span style="display:none">HIDDEN TEXT</span></h1>
+  <!-- I am comment -->
+  <p class="myClass">I have a class</p>
+  <ul>
+    <li>text 1</li>
+    <li class="myClass">text 2</li>
+    <li>text 3</li>
+    <li class="myClass">text 4</li>
+    <li>text 5</li>
+  </ul>
+  <p class="myClass">I have a class</p>
+  <p id="unique">I have unique id</p>
+  <p class="myClass">I have a class</p>
+</body>
+
+</html>

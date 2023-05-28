@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SliderJS</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script
+              src="https://code.jquery.com/jquery-3.5.1.js"
+              integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+              crossorigin="anonymous" defer>
+    </script>
+    <script src="./js/app.js" defer></script>
+</head>
+<body>
+
+    <h1>My slider</h1>
+
+    <div class="flex-wrapper">
+        <div class="slider-wrapper">
+            <div class="slide active">
+                <img src="./images/first.jpg" alt="first-image">
+            </div>
+            <div class="slide">
+                <img src="./images/second.jpg" alt="second-image">
+            </div>
+            <div class="slide">
+                <img src="./images/third.jpg" alt="third-image">
+            </div>
+            <div id="btn-prev">Prev</div>
+            <div id="btn-next">Next</div>
+        </div>
+    </div>
+    <div class="dots-wrapper">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+</body>
+</html>

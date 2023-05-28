@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM demo</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- <script src="js/coordinates.js" defer></script> -->
+  <script src="js/events.js" defer></script>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="testDiv"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sunt suscipit obcaecati vel,
+      neque esse ratione
+      laborum harum tempora! Ex aliquid numquam amet consectetur nihil qui modi deserunt pariatur accusamus.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate inventore nam earum voluptatibus atque, aliquid
+      ducimus consequatur, labore impedit beatae voluptas fuga praesentium recusandae ipsam rerum quam facere vero
+      doloremque?
+      Necessitatibus itaque quas ipsa animi culpa! Obcaecati earum, iure facere est possimus ipsam dignissimos adipisci
+      ea
+      blanditiis. Quod impedit, nihil ducimus nesciunt, quo repellat provident nulla corrupti ut at voluptatibus.
+      Numquam, odio. Tempore voluptas unde corrupti molestias libero reiciendis fugit obcaecati dignissimos. Quasi
+      alias,
+      iste non quam nam doloremque explicabo libero tempore iusto labore, placeat rerum magnam et officia id!
+      Architecto, laudantium. Ipsa, laboriosam. Sit assumenda aliquid numquam quisquam quas doloremque quia! Velit,
+      labore
+      cupiditate aperiam veniam incidunt animi? Dicta nemo corrupti asperiores hic voluptatum pariatur delectus eius
+      sint
+      vel.
+      Excepturi nulla deleniti praesentium consectetur necessitatibus, dolor pariatur expedita minima numquam cupiditate
+      quisquam voluptatibus magni nostrum mollitia quod amet soluta officiis et quis ab consequuntur laborum ex tenetur?
+      Sequi, porro.
+    </div>
+  </div>
+  <div class="parent">
+    <div class="testDiv"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sunt suscipit obcaecati vel,
+      neque esse ratione
+      laborum harum tempora! Ex aliquid numquam amet consectetur nihil qui modi deserunt pariatur accusamus.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate inventore nam earum voluptatibus atque, aliquid
+      ducimus consequatur, labore impedit beatae voluptas fuga praesentium recusandae ipsam rerum quam facere vero
+      doloremque?
+      Necessitatibus itaque quas ipsa animi culpa! Obcaecati earum, iure facere est possimus ipsam dignissimos adipisci
+      ea
+      blanditiis. Quod impedit, nihil ducimus nesciunt, quo repellat provident nulla corrupti ut at voluptatibus.
+      Numquam, odio. Tempore voluptas unde corrupti molestias libero reiciendis fugit obcaecati dignissimos. Quasi
+      alias,
+      iste non quam nam doloremque explicabo libero tempore iusto labore, placeat rerum magnam et officia id!
+      Architecto, laudantium. Ipsa, laboriosam. Sit assumenda aliquid numquam quisquam quas doloremque quia! Velit,
+      labore
+      cupiditate aperiam veniam incidunt animi? Dicta nemo corrupti asperiores hic voluptatum pariatur delectus eius
+      sint
+      vel.
+      Excepturi nulla deleniti praesentium consectetur necessitatibus, dolor pariatur expedita minima numquam cupiditate
+      quisquam voluptatibus magni nostrum mollitia quod amet soluta officiis et quis ab consequuntur laborum ex tenetur?
+      Sequi, porro.
+    </div>
+  </div>
+
+  <hr>
+
+  <button class="btn btn-1" onclick="this.classList.toggle('red'); console.log(this); console.log(event);">inline code
+    inside onclick</button>
+  <button class="btn btn-2" onclick="toggleColor(event, this)">inline function call inside onlick</button>
+  <button class="btn btn-3">onclick set from js</button>
+  <button class="btn btn-4">addEventListener</button>
+
+</body>
+
+</html>

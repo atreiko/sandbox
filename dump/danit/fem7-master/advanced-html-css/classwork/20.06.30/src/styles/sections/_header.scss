@@ -1,0 +1,78 @@
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5em;
+  position: relative;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: $bp-menu - 1px) {
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .nav ul {
+    flex-direction: column;
+  }
+
+  #collapsable-state:not(:checked) ~ #collapsable {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $bp-menu) {
+  .menu {
+    margin-left: auto;
+  }
+  .switch {
+    display: none;
+  }
+}
+
+#collapsable-state {
+  display: none;
+}
+
+.switch {
+  &__label {
+    display: block;
+    width: 2em;
+    height: 2em;
+    background-color: red;
+    cursor: pointer;
+  }
+}
+
+%menu__item {
+  margin: 0.5em;
+
+  @include bp($bp-menu) {
+    margin: 0.5em 2.5em;
+  }
+}
+
+.nav__item {
+  @extend %menu__item;
+}
+
+.lang {
+  @extend %menu__item;
+  display: flex;
+}

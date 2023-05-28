@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Color</title>
+    <style>
+      body {
+        margin: 0;
+        font-size: 1.125rem;
+        font-family: system-ui;
+        line-height: 1.5;
+        background-color: #fff;
+      }
+
+      section {
+        padding-block: 3rem;
+      }
+
+      section:nth-child(even) {
+        color: #323232;
+        background-color: #fff;
+      }
+
+      section:nth-child(odd) {
+        color: #efefef;
+        background-color: #000;
+      }
+
+      .wrapper {
+        width: min(100% - 3rem, 65ch);
+        margin-inline: auto;
+      }
+
+      .logo {
+        position: sticky;
+        top: 0.5rem;
+
+        mix-blend-mode: difference; /* TODO */
+
+        margin: 1rem;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        color: firebrick; /* CHECK */
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .logo svg {
+        height: 2rem;
+        width: 2rem;
+      }
+
+    </style>
+  </head>
+  <body>
+    <span class="logo"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+        />
+      </svg>
+      Logo</span
+    >
+
+    <section>
+      <div class="wrapper">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, optio reprehenderit
+          consequuntur, voluptates animi deserunt vitae quas iste minima, iure labore aperiam? Ex,
+          sapiente impedit laboriosam quibusdam minima quaerat veritatis!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, optio reprehenderit
+          consequuntur, voluptates animi deserunt vitae quas iste minima, iure labore aperiam? Ex,
+          sapiente impedit laboriosam quibusdam minima quaerat veritatis!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, optio reprehenderit
+          consequuntur, voluptates animi deserunt vitae quas iste minima, iure labore aperiam? Ex,
+          sapiente impedit laboriosam quibusdam minima quaerat veritatis!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis error, laborum velit
+          reprehenderit necessitatibus voluptatem nobis debitis quibusdam aut, dolorum aspernatur
+          perspiciatis, quasi sapiente! Aliquid officia iusto voluptatibus dolore molestiae.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrapper">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, optio reprehenderit
+          consequuntur, voluptates animi deserunt vitae quas iste minima, iure labore aperiam? Ex,
+          sapiente impedit laboriosam quibusdam minima quaerat veritatis!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, optio reprehenderit
+          consequuntur, voluptates animi deserunt vitae quas iste minima, iure labore aperiam? Ex,
+          sapiente impedit laboriosam quibusdam minima quaerat veritatis!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, optio reprehenderit
+          consequuntur, voluptates animi deserunt vitae quas iste minima, iure labore aperiam? Ex,
+          sapiente impedit laboriosam quibusdam minima quaerat veritatis!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis error, laborum velit
+          reprehenderit necessitatibus voluptatem nobis debitis quibusdam aut, dolorum aspernatur
+          perspiciatis, quasi sapiente! Aliquid officia iusto voluptatibus dolore molestiae.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrapper">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, optio reprehenderit
+          consequuntur, voluptates animi deserunt vitae quas iste minima, iure labore aperiam? Ex,
+          sapiente impedit laboriosam quibusdam minima quaerat veritatis!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, optio reprehenderit
+          consequuntur, voluptates animi deserunt vitae quas iste minima, iure labore aperiam? Ex,
+          sapiente impedit laboriosam quibusdam minima quaerat veritatis!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, optio reprehenderit
+          consequuntur, voluptates animi deserunt vitae quas iste minima, iure labore aperiam? Ex,
+          sapiente impedit laboriosam quibusdam minima quaerat veritatis!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis error, laborum velit
+          reprehenderit necessitatibus voluptatem nobis debitis quibusdam aut, dolorum aspernatur
+          perspiciatis, quasi sapiente! Aliquid officia iusto voluptatibus dolore molestiae.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrapper">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, optio reprehenderit
+          consequuntur, voluptates animi deserunt vitae quas iste minima, iure labore aperiam? Ex,
+          sapiente impedit laboriosam quibusdam minima quaerat veritatis!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, optio reprehenderit
+          consequuntur, voluptates animi deserunt vitae quas iste minima, iure labore aperiam? Ex,
+          sapiente impedit laboriosam quibusdam minima quaerat veritatis!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, optio reprehenderit
+          consequuntur, voluptates animi deserunt vitae quas iste minima, iure labore aperiam? Ex,
+          sapiente impedit laboriosam quibusdam minima quaerat veritatis!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis error, laborum velit
+          reprehenderit necessitatibus voluptatem nobis debitis quibusdam aut, dolorum aspernatur
+          perspiciatis, quasi sapiente! Aliquid officia iusto voluptatibus dolore molestiae.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

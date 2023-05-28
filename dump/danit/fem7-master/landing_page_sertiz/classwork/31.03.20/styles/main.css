@@ -1,0 +1,64 @@
+@import "reset.css";
+@import "_reset.css";
+@import "_fonts.css";
+@import "_shared.css";
+@import "_intro.css";
+@import "_nav.css";
+@import "_areas.css";
+@import "_team.css";
+
+body {
+	display: grid;
+	gap: 120px;
+	justify-content: center;
+	grid: auto / 1600px;
+}
+
+.header,
+.main {
+	display: grid;
+	gap: 120px;
+}
+
+.awards {
+	text-align: center;
+}
+
+.awards__slogan {
+	font-size: 22px;
+	text-transform: uppercase;
+	margin: 0 auto 28px;
+	font-weight: bold;
+}
+
+.awards__about-us {
+	font-size: 17px;
+	line-height: 24px;
+}
+
+.awards__image {
+	margin-bottom: -30px;
+	/* компенсируем белое поле внизу на картинке */
+}
+
+/* Kateryna */
+
+.ideas {
+	/* width: 1600px; */
+	height: 380px;
+	background-image: url("../img/Layer2.jpg");
+	background-repeat: no-repeat;
+	/* margin-top: 125px; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ideas h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 22px;
+	color: white;
+}
+
+/* Kateryna */

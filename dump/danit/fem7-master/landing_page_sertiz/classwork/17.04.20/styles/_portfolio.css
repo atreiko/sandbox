@@ -1,0 +1,37 @@
+.portfolio {
+	text-align: center;
+}
+.portfolio-gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 280px);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 15px;
+	margin: 0 auto;
+	justify-content: center;
+}
+.portfolio-page {
+	border: 2px solid black;
+	text-align: center;
+	height: 270px;
+}
+.button--small {
+	background: #f48e0b;
+	color: #ffffff;
+	border: none;
+	width: 141px;
+	height: 39px;
+	font-size: 14px;
+	margin-top: 27px;
+}
+.portfolio-page-style h3 {
+	margin-top: 51px;
+}
+
+.is-decorated-small::after {
+	display: block;
+	background: linear-gradient(0deg, #f1ad1d, #f1ad1d), #f48e0b;
+	margin: 25px auto 25px;
+	content: "";
+	width: 62px;
+	height: 3px;
+}

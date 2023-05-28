@@ -1,0 +1,36 @@
+.intro {
+  width: 1600px;
+  height: 900px;
+  background-image: url(../img/intro.jpg);
+}
+
+.heading-sertiz {
+  /* width: 175;
+  height: 35; */
+  /* border: 1px solid black; */
+  font-family: Montserrat;
+  font-size: 42px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.first-paragraph {
+  /* width: 287;
+  height: 16; */
+  font-size: 18px;
+  color: white;
+}
+
+.slogan {
+  font-size: 54px;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid white;
+  padding: 45px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.yellow {
+  color: yellow;
+  margin-right: 40px;
+}

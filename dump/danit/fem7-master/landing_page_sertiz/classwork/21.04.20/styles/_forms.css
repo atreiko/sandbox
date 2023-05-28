@@ -1,0 +1,83 @@
+.field {
+	margin: 0 auto;
+	display: flex;
+}
+
+.email {
+	width: 773px;
+	height: 67px;
+	padding-left: 2em;
+}
+
+input::placeholder {
+	font-style: italic;
+}
+
+.subscribe form {
+	display: grid;
+}
+
+.send-message form {
+	display: grid;
+	gap: 1em;
+}
+
+.contacts {
+	font-size: 0.9em;
+}
+
+.contacts-field {
+	padding: 1em;
+}
+
+.placeholder--basic {
+	padding: 1em;
+	font-style: italic;
+	color: grey;
+}
+
+.send-message .button--basic {
+	text-transform: uppercase;
+}
+
+.contact-main {
+	display: grid;
+	gap: 1em;
+	grid-template-areas:
+		"message touch"
+		"message follow";
+	grid-template-columns: 1fr 1fr;
+}
+
+.message {
+	grid-area: message;
+	display: grid;
+	gap: 1em;
+}
+
+.message-form {
+	display: grid;
+	gap: 1em;
+}
+
+.follow-us {
+	grid-area: follow;
+}
+
+.get-in-touch {
+	grid-area: touch;
+}
+
+.message,
+.follow-us,
+.get-in-touch {
+	border: 2px solid red;
+}
+
+.contacts {
+	display: flex;
+}
+
+.contacts > * {
+	flex: 1;
+}

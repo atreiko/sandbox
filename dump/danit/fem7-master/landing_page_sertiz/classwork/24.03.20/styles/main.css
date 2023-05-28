@@ -1,0 +1,516 @@
+@import "reset.css";
+
+/* USKOVA */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  /* background: grey; */
+  font-family: "Montserrat", sans-serif;
+  /* background: black; */
+}
+
+.page-content {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.intro {
+  height: 900px;
+  padding-left: 215px;
+  padding-top: 531px;
+  background-image: url(../img/intro.jpg);
+  background-repeat: no-repeat;
+  margin-bottom: 71px;
+}
+
+.intro-text {
+  display: inline-block;
+  color: #ffffff;
+  /* border: 1px solid white;
+  padding: 10px; */
+}
+
+.heading-sertiz {
+  margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 59px;
+  text-transform: uppercase;
+  color: white;
+  /*position: absolute;*/
+  /*top: 531px;*/
+  /*left: 215px;*/
+}
+
+.first-paragraph {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+}
+
+.slogan {
+  width: 833px;
+  margin-top: 22px;
+  font-size: 54px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid white;
+  padding: 40px 5px 39px 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.is-Accented {
+  color: #f48e0b;
+}
+
+.intro-text span {
+  margin-right: 40px;
+}
+
+/* TAMARA */
+
+.awards {
+  width: auto;
+  width: 1578px;
+  height: 873px;
+  text-align: center;
+  font-family: "Montserrat", "Arial", sans-seri;
+  margin: 128px 0 70px;
+}
+
+.awards__container {
+  margin: 0 auto;
+}
+
+.colored-line::after {
+  display: block;
+  background: linear-gradient(0deg, #f1ad1d, #f1ad1d), #f48e0b;
+  margin: 50px auto 50px auto;
+  content: " ";
+  width: 62px;
+  height: 7px;
+}
+
+.awards__slogan {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 0 auto 28.5px;
+  font-weight: bold;
+}
+
+.awards__about-us {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+/* TAMARA */
+
+.layer2-about-us .menutop {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* НЕСТЕРЕНКО */
+
+/* Рыженкова */
+.nav-main {
+  width: 1169px;
+  height: 53px;
+}
+.nav-container {
+  border-bottom: 3px solid #f1b128;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.nav-item {
+  display: inline-block;
+  text-align: center;
+  padding: 30px;
+}
+
+.nav-link {
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Рыженкова */
+
+/* .menutop {
+    border-bottom: 3px solid #f1b128;
+}
+
+.menutop ul {
+    display: flex;
+    justify-content: flex-end;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    list-style: none;
+}
+
+.menutop ul li {
+    display: inline;
+    margin: 30px;
+}
+
+.menutop ul li a {
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+#hello {
+    color: #f1b128;
+} */
+
+/* Рыженкова */
+
+/* НЕСТЕРЕНКО */
+
+/* Андрей */
+
+.consulting {
+  position: absolute;
+  width: 1600px;
+  height: 493px;
+  left: 0px;
+  top: 1731px;
+}
+.description {
+  position: absolute;
+  width: 594px;
+  height: 317px;
+  left: 814px;
+  top: 178px;
+
+  background: #ffffff;
+}
+
+.whattext {
+  position: absolute;
+  width: 360px;
+  height: 18px;
+  left: 620px;
+  top: 0px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 18px;
+  /* identical to box height, or 82% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.weare {
+  position: absolute;
+  width: 798px;
+  height: 24px;
+  left: 400px;
+  top: 46.5px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  /* identical to box height, or 141% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #4d4943;
+}
+
+.business {
+  position: absolute;
+  top: 180px;
+  width: 253px;
+  height: 18px;
+  left: 814px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height, or 100% */
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.cons1 {
+  margin-left: 5px;
+  color: #f1ad1d;
+}
+
+.blockconsulting {
+  position: absolute;
+  width: 117px;
+  height: 42px;
+  left: 228px;
+  top: 273px;
+  background: #333333;
+}
+
+.blockphoto {
+  position: absolute;
+  width: 117px;
+  height: 42px;
+  left: 530px;
+  top: 273px;
+  background: #333333;
+}
+
+.blockweb {
+  position: absolute;
+  width: 117px;
+  height: 42px;
+  left: 228px;
+  top: 439px;
+  background: #333333;
+}
+
+.blockadvertising {
+  position: absolute;
+  width: 117px;
+  height: 42px;
+  left: 530px;
+  top: 439px;
+  background: #333333;
+}
+
+.consulting1 {
+  position: absolute;
+  top: 290px;
+  width: 97px;
+  height: 12px;
+  left: 242px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 12px;
+  /* identical to box height, or 86% */
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.photography {
+  position: absolute;
+  top: 290px;
+  width: 109px;
+  height: 12px;
+  left: 545px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 12px;
+  /* identical to box height, or 86% */
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.webdesign {
+  position: absolute;
+  top: 456px;
+  width: 104px;
+  height: 12px;
+  left: 242px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 12px;
+  /* identical to box height, or 86% */
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.advertising {
+  position: absolute;
+  top: 456px;
+  width: 101px;
+  height: 12px;
+  left: 544px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 12px;
+  /* identical to box height, or 86% */
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.blockimgs1 {
+  position: absolute;
+  width: 270px;
+  height: 148px;
+  left: 215px;
+  top: 178px;
+  background: url(../img/asd.jpg);
+}
+
+.blockimgs2 {
+  position: absolute;
+  width: 270px;
+  height: 148px;
+  left: 515px;
+  top: 178px;
+  background: url(../img/consulting.jpg);
+}
+
+.blockimgs3 {
+  position: absolute;
+  width: 270px;
+  height: 148px;
+  left: 215px;
+  top: 348px;
+  background: url(../img/asd1.jpg);
+}
+
+.blockimgs4 {
+  position: absolute;
+  width: 270px;
+  height: 148px;
+  left: 515px;
+  top: 348px;
+  background: url(../img/asd2.jpg);
+}
+
+.blockorange1 {
+  position: absolute;
+  width: 176px;
+  height: 51px;
+  left: 815px;
+  top: 444px;
+  background: #f1ad1d;
+}
+
+.checkour {
+  position: absolute;
+  width: 151px;
+  height: 12px;
+  left: 27px;
+  top: 23px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 12px;
+  /* identical to box height, or 86% */
+
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: 12px;
+  /* identical to box height, or 86% */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+.areas {
+  position: absolute;
+  width: 570px;
+  height: 317px;
+  left: 0px;
+  top: 0px;
+}
+/* Андрей */
+
+/* Kateryna */
+
+.black-image {
+  width: 1600px;
+  height: 380px;
+  background-image: url(../img/Layer2.jpg);
+  background-repeat: no-repeat;
+}
+
+.black-image-text {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 22p;
+  margin: 151px auto 15px;
+}
+
+.ideascolor {
+  color: #f1ad1d;
+}
+/* Kateryna */
+
+/* Oleh Filozof */
+
+.secret_of_a_company {
+  width: 1600px;
+  height: 873px;
+  background-color: rgb(255, 255, 255);
+}
+
+.secret_h1 {
+  width: 512px;
+  height: 18px;
+  margin: 2px auto 28.5px;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.secret_p {
+  width: 798px;
+  height: 24px;
+  margin: 0 402px 0 418px;
+  font-family: Lato;
+  font-size: 17px;
+  line-height: 24px;
+  color: #4d4943;
+}
+
+.our_team {
+  display: inline-block;
+  width: 1200px;
+  height: 360px;
+  margin: 0 217px;
+}
+.our_team_img_block {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.our_team_img {
+  position: relative;
+}
+
+.our_names {
+  position: absolute;
+  width: 139px;
+  height: 45px;
+  background-color: #333333;
+}
+
+/*  Oleh Filozof */

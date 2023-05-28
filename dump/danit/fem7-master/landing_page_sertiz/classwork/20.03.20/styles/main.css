@@ -1,0 +1,159 @@
+/* USKOVA */
+
+
+/* * {
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* background: black; */
+}
+
+.center {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.intro {
+    height: 900px;
+    padding-left: 215px;
+    padding-top: 531px;
+    background-image: url(../img/intro.jpg);
+    background-repeat: no-repeat;
+}
+
+.heading-sertiz {
+    margin: 0;
+    font-size: 48px;
+    line-height: 59px;
+    text-transform: uppercase;
+    color: white;
+    /*position: absolute;*/
+    /*top: 531px;*/
+    /*left: 215px;*/
+}
+
+.first-paragraph {
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+}
+
+.slogan {
+    width: 833px;
+    margin-top: 22px;
+    font-size: 54px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white;
+    padding: 40px 5px 39px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.yellow {
+    color: #f48e0b;
+    margin-right: 40px;
+}
+
+.layer2 {
+    width: auto;
+    width: 1578px;
+    height: 873px;
+    text-align: center;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+.layer2-slogan {
+    font-size: 22px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin: 71px auto 28.5px auto;
+}
+
+.layer2-about-us {
+    font-size: 17px;
+    line-height: 24px;
+    margin: 0 auto 0 auto;
+}
+
+.layer2-about-us::after {
+    display: block;
+    background: linear-gradient(0deg, #F1AD1D, #F1AD1D), #F48E0B;
+    margin: 45.5px auto 55px auto;
+    content: ".";
+    width: 62px;
+    height: 7px;
+}
+
+.web-award {
+    width: 281px;
+    height: 241px;
+}
+
+.layer2-about-us .menutop {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* НЕСТЕРЕНКО */
+
+.menutop {
+    border-bottom: 3px solid #F1B128;
+}
+
+.menutop ul {
+    display: flex;
+    justify-content: flex-end;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    list-style: none;
+}
+
+.menutop ul li {
+    display: inline;
+    margin: 30px;
+}
+
+.menutop ul li a {
+    text-decoration: none;
+    color: #3D3D3D;
+}
+
+#hello {
+    color: #F1B128;
+}
+
+
+/* НЕСТЕРЕНКО */
+
+
+/* Андрей */
+
+.aaa ul,
+.aaa li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.aaa {
+    position: absolute;
+    width: 270px;
+    height: 148px;
+}
+
+.button220 {
+    position: absolute;
+    width: 176px;
+    height: 51px;
+    background: #F1AD1D;
+}
+
+
+/* Андрей */

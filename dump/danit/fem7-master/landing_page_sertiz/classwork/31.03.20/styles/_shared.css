@@ -1,0 +1,54 @@
+.is-accented {
+	color: #f48e0b;
+	/* #f1ad1d */
+}
+
+.is-decorated:not(:last-child) {
+	margin-bottom: 50px;
+}
+
+.is-decorated::after {
+	display: block;
+	background: linear-gradient(0deg, #f1ad1d, #f1ad1d), #f48e0b;
+	margin: 50px auto 0;
+	content: " ";
+	width: 62px;
+	height: 4px;
+}
+
+.is-narrow {
+	width: 1200px;
+	justify-self: center;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+
+.font-small {
+	font-size: 0.875rem;
+	line-height: 1.57;
+	font-family: "Lato", "Roboto", sans-serif;
+	font-weight: 300;
+	color: hsl(0, 1%, 21%);
+}
+
+.font-basic {
+	font-size: 1.125rem;
+	line-height: 1.41;
+	font-family: "Lato", "Roboto", sans-serif;
+	font-weight: 400;
+	color: hsl(36, 7%, 28%);
+}
+
+.font-large {
+	text-transform: uppercase;
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 1.375rem;
+	color: white;
+}

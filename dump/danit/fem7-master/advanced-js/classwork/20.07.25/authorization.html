@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="tasks/fetch-authorization.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper fadeInDown pt-4">
+      <div id="formContent">
+        <!-- Login Form -->
+        <form id="login-form" action="http://danit.com.ua/login-json">
+          <input
+            type="text"
+            class="fadeIn second"
+            name="login"
+            placeholder="login"
+            required
+          >
+          <input
+            type="text"
+            class="fadeIn third"
+            name="password"
+            placeholder="password"
+            required
+          >
+          <input type="submit" class="fadeIn fourth" value="Log In">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

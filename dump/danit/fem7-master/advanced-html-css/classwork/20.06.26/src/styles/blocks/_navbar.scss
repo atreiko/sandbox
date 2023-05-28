@@ -1,0 +1,33 @@
+.navbar {
+  padding: 30px 0;
+
+  &__content {
+    display: flex;
+  }
+
+  &__nav {
+    display: flex;
+
+    &__item {
+      margin: 0 10px;
+    }
+
+    &__link {
+      text-decoration: none;
+
+      &__hover {
+        border-bottom: 1px solid red;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+}
+
+.header {
+  @media (max-width: $tablet) {
+    padding: 100px 0;
+  }
+}

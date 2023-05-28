@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM demo</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- без preload deferred.js будет грузиться позже остальных (в Хроме) -->
+  <!-- <link rel="preload" href="js/loading/deferred.js" as="script"> -->
+  <!-- <script src="js/loading/async2.js" async></script>
+    <script src="js/loading/async.js" async></script>
+    <script src="js/loading/deferred.js" defer></script>
+    <script src="js/loading/deferred2.js" defer></script>
+    <script src="js/loading/blocking.js"></script>
+    <script src="js/loading/blocking2.js"></script> -->
+  <script src="js/events-keyboard.js" defer></script>
+  <script src="js/events-scroll.js" defer></script>
+  <script src="js/storage.js" defer></script>
+  <script src="js/timeout.js" defer></script>
+  <script src="js/homework7.js" defer></script>
+
+</head>
+
+<body>
+  <img src="img/butterfly.jpg" alt="">
+  <div id="showScroll"></div>
+
+  <ul>
+    <li tabindex="1">Один</li>
+    <li tabindex="0">Ноль</li>
+    <li tabindex="2">Два</li>
+    <li tabindex="-1">Минус один</li>
+  </ul>
+
+  <style>
+    li {
+      cursor: pointer;
+    }
+
+    :focus {
+      outline: 1px dashed green;
+    }
+  </style>
+
+  <h1>Логин</h1>
+  <form action="#">
+    <input name="fullName" type="text" placeholder="Введите ваше имя..." />
+    <input name="phone" type="tel" placeholder="Введите ваш телефон..." />
+    <input type="submit" value="Войти" />
+  </form>
+
+  <script src="js/loading/body-end-script.js"></script>
+</body>
+
+</html>

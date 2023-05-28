@@ -1,0 +1,31 @@
+.about-us {
+	text-align: justify;
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.fas.fa-quote-left::after {
+	content: "";
+	width: 90%;
+	height: 3px;
+	background-color: #f1ad1d;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+.fas.fa-quote-left {
+	font-size: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1rem 0em;
+}
+.coments {
+	width: 30%;
+}
+.coment-author {
+	margin: 3rem 0;
+}

@@ -1,0 +1,58 @@
+.block {
+  background: white;
+}
+.example-container {
+  border: 1px solid black;
+  /*  если убрать тут border, в первом примере margin h1 вылезет за пределы этого контейнера, см. далее */
+  background: orange;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  background: rgba(256, 0, 0, 0.3);
+  margin: 10px 0;
+  outline: 2px dashed red;
+}
+
+.child {
+  background: green;
+  margin: 20px 0;
+}
+
+/* child полностью занимает весь parent
+child margin выступает за пределы родителя
+ели добавить к parent margin, произойдет его схлопывание с child margin (победит бОльший из них, в данном случае child)
+*/
+.limited-by-padding .parent {
+  padding-top: 5px;
+}
+
+.fixed-with-overflow .parent {
+  overflow: auto;
+  /* overflow:hidden; тоже работает, но дает еще и другие эффекты (скрывает вылезающий контент при фиксированном height)   */
+}
+
+.fixed-with-display .parent {
+  display: flex;
+  /*   display: grid; */
+  /*   display: inline-block; */
+}
+
+.fixed-with-position.example-container {
+  position: relative;
+  height: 80px;
+}
+.fixed-with-position .parent {
+  position: absolute;
+}
+
+.limited-by-padding .parent {
+  padding-top: 5px;
+}
+.limited-by-border .parent {
+  border-top: 3px solid red;
+  /*   border-top: 1px solid transparent; */
+}
