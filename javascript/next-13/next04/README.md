@@ -1,6 +1,4 @@
-# NEXT 13.2.3
-
-## SSG, SSR, ISR
+# NEXT 13.2.3 | SSG, SSR, ISR
 
 `npm run build`  
 

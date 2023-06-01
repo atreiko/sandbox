@@ -1,4 +1,4 @@
-# Blog | Next 
+# Next 13 | Blog Website 
 
 **Libs**:  
 - tailwind  
