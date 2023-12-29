@@ -1,0 +1,14 @@
+{
+  "node": {
+    "a8f15a78f6f13ad7fd2910053e2f274a93dd0082": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fartemtreiko%2FDesktop%2Ftreiko%2Fsandbox%2Fdump%2Fhookah-expenses%2Fsrc%2Fcomponents%2Fheader%2FHeader.tsx%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "GPaXDzytNbj6SRjdunTG2V5vNMt5rehSlYdcuNrIXLY="
+}
